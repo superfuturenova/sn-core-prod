@@ -1,0 +1,7 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/privacy", "destination": "https://supernova.is/privacy/surveillance-capitalism.html" }
+  ]
+}

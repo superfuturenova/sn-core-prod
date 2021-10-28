@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <!-- HTML Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Браузер, который все о&nbsp;нас знал: как работают cookies и&nbsp;кому они нужны</title>
+    <meta name="description" content="Всего от&nbsp;нескольких строчек кода зависит будущее рекламы в&nbsp;интернете и&nbsp;конфиденциальность личных данных">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="supernova.is">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Браузер, который все о&nbsp;нас знал: как работают cookies и&nbsp;кому они нужны">
+    <meta property="og:description" content="Всего от&nbsp;нескольких строчек кода зависит будущее рекламы в&nbsp;интернете и&nbsp;конфиденциальность личных данных">
+    <meta property="og:image" content="/img/cookies/og.jpg">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="supernova.is">
+    <meta property="twitter:url" content="supernova.is">
+    <meta name="twitter:title" content="Браузер, который все о&nbsp;нас знал: как работают cookies и&nbsp;кому они нужны">
+    <meta name="twitter:description" content="Всего от&nbsp;нескольких строчек кода зависит будущее рекламы в&nbsp;интернете и&nbsp;конфиденциальность личных данных">
+    <meta name="twitter:image" content="/img/cookies/og.jpg">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- PLAUSABLE -->
+
+    <script async defer data-domain="supernova.is" src="https://plausible.io/js/plausible.js"></script>
+
+    <!-- FAVICONS -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png?v=YA376Q73k9">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png?v=YA376Q73k9">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png?v=YA376Q73k9">
+    <link rel="manifest" href="/fav/site.webmanifest?v=YA376Q73k9">
+    <link rel="mask-icon" href="/fav/safari-pinned-tab.svg?v=YA376Q73k9" color="#000000">
+    <link rel="shortcut icon" href="/fav/favicon.ico?v=YA376Q73k9">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!-- STYLE -->
+
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+
+        h2 {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        figcaption.caption {
+            text-shadow: none !important;
+            color:#000;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="content">
+    <div class="logo">
+        <a class="logo-link" href="/"">
+        <svg width="394" height="30vh" viewBox="0 0 394 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <style>
+                @media (prefers-color-scheme: dark) {
+                circle, rect {
+                    fill: white;
+                }
+                    rect, line {
+                    stroke: white;
+                    }
+                }
+            </style>
+            <circle cx="197.005" cy="253.667" r="38.1241" fill="black"/>
+            <rect x="0.480469" y="245.831" width="393.039" height="15.6721" rx="7.83604" fill="black"/>
+            <line x1="269.236" y1="172.369" x2="367.61" y2="65.0791" stroke="black" stroke-width="23.9522" stroke-linecap="round" stroke-dasharray="5.99 59.88"/>
+            <line x1="11.9761" y1="-11.9761" x2="157.539" y2="-11.9761" transform="matrix(-0.675817 -0.737069 -0.737069 0.675817 128.565 189.29)" stroke="black" stroke-width="23.9522" stroke-linecap="round" stroke-dasharray="5.99 59.88"/>
+            <line x1="198.509" y1="158.144" x2="198.508" y2="12.5809" stroke="black" stroke-width="23.9522" stroke-linecap="round" stroke-dasharray="5.99 59.88"/>
+        </svg>
+        </a>
+    </div>
+    <div class="middle-links">
+        <a href="/about.html">Манифест</a>
+        <a href="/us.html" style="margin-right: 0px !important">О нас</a>
+    </div>
+    <div class="headline-block">
+        <figure class="image-container">
+            <img src="/img/cookies/1.png" alt="">
+            <figcaption class="caption" onclick="window.open('https://www.instagram.com/prawnnastia','_blank');">Иллюстрация: Анастасия Сорокоумова</figcaption>
+        </figure>
+        <h2 class="headline pre-headline byline" rel="author">Евгений Лисовский</h2>
+        <h1 class="headline">Браузер, который все о&nbsp;нас знал: как работают cookies и&nbsp;кому они нужны</h1>
+
+        <time pubdate datetime="2021-08-10">10 августа 2021</time>
+    </div>
+    <article class="text" lang="ru">
+
+        <em>В&nbsp;начале 2021 года казалось: IT-гиганты вот-вот откажутся от&nbsp;cookies. А&nbsp;это значит, при посещении нового сайта мы&nbsp;больше не&nbsp;увидим надоедливое предупреждение о&nbsp;незаметной слежке за&nbsp;нашими действиями в&nbsp;интернете. По&nbsp;крайней мере, компания Google <a href="https://blog.google/products/ads-commerce/a-more-privacy-first-web/?_ga=2.6202288.284883935.1615210176-996257284.1610040764">обещала</a>, что перестанет поддерживать использование этого инструмента в&nbsp;своем браузере Chrome. Многие технологические обозреватели предвкушали начало новой эры интернета&nbsp;&mdash; более лояльного к&nbsp;пользователю, а&nbsp;не&nbsp;к&nbsp;рекламодателям. Однако в&nbsp;какой-то момент будущее было отложено, и&nbsp;восторжествовал статус-кво. Чем это нам грозит, стоит&nbsp;ли бояться куки и&nbsp;кому они вообще нужны? Разбираемся вместе с&nbsp;IT-специалистом Евгением Лисовским.</em>
+
+        <h3 class="">•</h3>
+        
+        <h2 style="margin-top: 0;">О&nbsp;чем речь?</h2>
+        
+        <p>
+        Куки&nbsp;(cookie)&nbsp;&mdash; это небольшие фрагменты данных, которые хранятся в&nbsp;браузере в&nbsp;виде отдельных текстовых файлов. Обычно их&nbsp;посылает веб-сервер, но&nbsp;их&nbsp;также можно создавать в&nbsp;браузере с&nbsp;помощью JavaScript. Эти данные включаются при каждом запросе на&nbsp;сервер. При этом сервер может читать и&nbsp;писать куки только для своего доменного&nbsp;имени.
+        </p>
+
+        <p>
+        Куки&nbsp;помогают решить несколько задач, вот три основные:
+        </p>
+        
+        <blockquote>
+        <h3>Авторизация</h3>
+        <p>
+        Когда&nbsp;вы&nbsp;вводите логин и&nbsp;пароль на&nbsp;сайте, он&nbsp;отправляется на&nbsp;сервер, проверяется, и&nbsp;если все хорошо, то&nbsp;в&nbsp;ответ вам приходит сообщение об&nbsp;успешной авторизации и&nbsp;зашифрованный идентификатор сессии. С&nbsp;этого момента при каждом обращении к&nbsp;сайту эта сессия будет отправляться вместе с&nbsp;запросом. Так сервер узнает, что данные запрашиваете именно&nbsp;вы.
+        </p>
+        </blockquote>
+
+
+        <blockquote>
+        <h3>Персональные настройки</h3>
+        
+        <p>
+        Когда&nbsp;пользователь выбирает ночную или дневную тему или расположение информационных блоков в&nbsp;браузере, выбранные настройки интерфейса сохраняются в&nbsp;виде куки. При следующем посещении сайта программа считает файлы из&nbsp;хранилища куки и&nbsp;применит&nbsp;их. Магия! При этом серверу не&nbsp;требуется хранить данные о&nbsp;пользовательских предпочтениях у&nbsp;себя.
+        </p>
+        </blockquote>
+
+
+        <blockquote>
+        <h3>Отслеживание</h3>
+        
+        <p>
+        Компании любят собирать данные о&nbsp;действиях и&nbsp;предпочтениях пользователей, да&nbsp;и&nbsp;вообще обо всем, до&nbsp;чего могут дотянуться. Эти данные продают и&nbsp;покупают. Чтобы выйти за&nbsp;границы своего сервера, вебмастера должны внедрить их&nbsp;на&nbsp;страницы, которые позже откроет посетитель. Прикрываются обычно какими-нибудь важными инструментами: счетчиками пользователей, полезными скриптами или рекламными блоками.
+        </p>
+        </blockquote>
+
+        <figure class="image-container inline-image">
+            <img src="/img/cookies/2.png" alt="">
+            <figcaption class="caption" onclick="window.open('https://www.instagram.com/prawnnastia','_blank');">Иллюстрация: Анастасия Сорокоумова</figcaption>
+        </figure>
+
+        <h2>Какие есть альтернативы?</h2>
+        
+        <p>
+        Безусловно, тот факт, что за&nbsp;вашей сетевой жизнью следят, не&nbsp;вызывает восторга. Если верить <a href="https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/">опросу Pew Research Centre за&nbsp;2019&nbsp;год</a>, по&nbsp;мнению&nbsp;72% пользователей в&nbsp;США, Google записывает каждое их&nbsp;действие. Без пристального наблюдения за&nbsp;людьми не&nbsp;работал&nbsp;бы рекламный бизнес в&nbsp;интернете. Из&nbsp;того&nbsp;же исследования следует: 40% опрошенных готовы попрощаться с&nbsp;продуктами компании, если обнаружат, что личную информацию передают третьим лицам без их&nbsp;ведома. Согласно статистике поисковой системы Google, за&nbsp;последние несколько лет люди стали чаще искать в&nbsp;сети информацию о&nbsp;защите персональных данных.
+        </p>
+        <p>
+        Чтобы не&nbsp;потерять доверие пользователей, IT-гиганты так или иначе будут вынуждены придумать альтернативу куки. Компания Google не&nbsp;первая забеспокоилась на&nbsp;этот счет. Firefox и&nbsp;Safari уже отказались от&nbsp;внешних куки. Другое дело, что Google&nbsp;&mdash; один из&nbsp;крупнейших игроков на&nbsp;рынке, поэтому выбор корпорации будет иметь весомое значение. В&nbsp;качестве замены куки компания предлагает технологию FLoC, которая входит в&nbsp;большой проект по&nbsp;обеспечению пользовательской безопасности Privacy Sandbox. Новый алгоритм должен был уже запуститься весной 2021&nbsp;года, но&nbsp;с&nbsp;одной стороны, помешала проверка британских регулировщиков, с&nbsp;другой&nbsp;&mdash; сами инженеры Google признаются, что продукт не&nbsp;до&nbsp;конца готов. Поэтому руководство IT-корпорации решило перенести запуск нового инструмента на&nbsp;вторую половину 2023 года.
+        </p>
+        <p>
+        Рекламодатели и&nbsp;компании-конкуренты с&nbsp;облегчением выдохнули. Инсайдеры индустрии признают: пока ни&nbsp;у&nbsp;кого нет цельного видения интернета после куки. Необходимость перемен под сомнение никто не&nbsp;ставит. Но&nbsp;как сделать, чтобы и&nbsp;реклама по-прежнему была эффективной, и&nbsp;пользователи чувствовали&nbsp;бы себя защищенными,&nbsp;&mdash; ясный ответ на&nbsp;этот вопрос сегодня еще никто не&nbsp;готов предложить. Будет&nbsp;ли будущее за&nbsp;FLoC или какой-то другой технологией, которую сейчас разрабатывают другие компании, покажет время.
+        </p>
+
+        <blockquote>
+        <h3>Federated Learning of&nbsp;Cohorts (FLoC) от&nbsp;Google</h3>
+        
+        <p>
+        Суть&nbsp;этой технологии в&nbsp;том, что данные пользователя не&nbsp;покидают браузера. Таргетинг рекламы ориентирован не&nbsp;на&nbsp;конкретного пользователя интернета, а&nbsp;на&nbsp;группу с&nbsp;похожим поведением (когорта). Работает это так:
+        </p>
+        <ul>
+        
+        <li>браузер запрашивает у&nbsp;FLoC-сервиса описание нескольких когорт
+        
+        <li>исходя из&nbsp;последних действий и&nbsp;истории поведения пользователя, браузер выбирает подходящую когорту
+        
+        <li>если&nbsp;на&nbsp;странице встречается поставщик рекламных блоков, который поддерживает FLoC, то&nbsp;ему отправляется идентификатор&nbsp;когорты
+        
+        <li>поставщик рекламы отдает браузеру рекламу, которая подходит этой когорте
+        </li>
+        </ul>
+        <p>
+        Отметим, что когорта у&nbsp;браузера не&nbsp;постоянна и&nbsp;будет меняться в&nbsp;зависимости от&nbsp;действия пользователя. При этом, чем больше в&nbsp;группе подходящих по&nbsp;поведению пользователей, тем анонимней эта когорта. Но&nbsp;чем меньше, тем более релевантна реклама.
+        </p>
+        <p>
+        Эксперты&nbsp;отрасли встретили инициативу Google с&nbsp;критикой. Например, штатный технолог команды Tech Projects из&nbsp;EFF Беннет Сайферз, в&nbsp;своей статье &laquo;<a href="https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea">Google&rsquo;s FLoC&nbsp;Is a&nbsp;Terrible Idea</a>&raquo; пишет о&nbsp;том, что &laquo;FLoC призван стать новым способом заставить браузер выполнять профилирование: ваша недавняя онлайн-активность &bdquo;сжимается&ldquo; до&nbsp;поведенческой метки, которая затем используется для обмена между сайтами и&nbsp;рекламодателями&raquo;. Разработчики WordPress, поддерживая тревогу EFF относительно внедрения новой технологии от&nbsp;Google, предложили патч для отключения поддержки FLoC&nbsp;в их&nbsp;ПО.
+        </p>
+        <p>
+        Брендан Эйх, генеральный директор и&nbsp;соучредитель Brave, совместно с&nbsp;Питером Снайдером, старшим научным сотрудником по&nbsp;вопросам конфиденциальности в&nbsp;Brave, объяснили почему поддержка <a href="https://brave.com/why-brave-disables-floc/">FLoC&nbsp;не будет включена</a> в&nbsp;разрабатываемый ими браузер: программа предназначена для того, чтобы обеспечить конфиденциальность пользователя, но&nbsp;по&nbsp;факту только вредит&nbsp;ему.
+        </p>
+        </blockquote>
+
+        <blockquote>
+        <h3>SWAN&nbsp;от&nbsp;PubMatic и&nbsp;OpenX вместе с&nbsp;Zeta Global</h3>
+        
+        
+        <p>
+        Суть&nbsp;этого предложения отличается от&nbsp;FLoC: при первом посещении сайта с&nbsp;поддержкой SWAN пользователю предложат разрешить показ рекламы. Рекламу могут показывать только участники сети. Предпочтения передаются в&nbsp;онлайн-реестр SWAN и&nbsp;затем используются для персонализации рекламы, если она разрешена. Идентификатор можно сбросить в&nbsp;любой момент, а&nbsp;настройки изменить&nbsp;&mdash; это приведет к&nbsp;изменению рекламы на&nbsp;всех сайтах&nbsp;сети.
+        </p>
+        <p>
+        Разработчики обещают улучшенный пользовательский опыт, децентрализацию и&nbsp;прозрачность доставки рекламного контента как для издателей, так для маркетологов и&nbsp;пользователей.
+        </p>
+        <p>
+        Технология зависит от&nbsp;следующих инструментов: файлы cookie, временное перенаправление HTTP и&nbsp;URL-адрес HTTP. Выглядит это все как цепочка редиректов, а&nbsp;с&nbsp;&laquo;Трекером перенаправления&raquo; основные браузеры борются.
+        </p>
+        </blockquote>
+
+        <figure class="image-container inline-image">
+            <img src="/img/cookies/3.png" alt="">
+            <figcaption class="caption" onclick="window.open('https://www.instagram.com/prawnnastia','_blank');">Иллюстрация: Анастасия Сорокоумова</figcaption>
+        </figure>
+
+        <h2>Спасет&nbsp;ли меня VPN от&nbsp;слежки?</h2>
+        
+        <p>
+        Немало людей считают, что есть довольно простой способ спастись от&nbsp;незаметной слежки&nbsp;&mdash; и&nbsp;называется он&nbsp;VPN. К&nbsp;сожалению, такое предположение далеко от&nbsp;правды.
+        </p>
+
+        <p>
+        Технология Виртуальных частных сетей, а&nbsp;именно так расшифровывается аббревиатура VPN, поможет скрыть ваш трафик от&nbsp;провайдера и&nbsp;других лиц, через оборудование которых проходят пакеты с&nbsp;данными. Она позволяет &laquo;сменить&raquo; географию запросов, не&nbsp;меняя браузер. Однако для всех отслеживающих куки, которые сервисы уже прицепили к&nbsp;вашему браузеру, вы&nbsp;останетесь той&nbsp;же самой личностью. Даже если использовать &laquo;режим инкогнито&raquo;, вас можно идентифицировать по&nbsp;цифровому отпечатку браузера (browser fingerprinting).
+        </p>
+
+        <blockquote>
+        <h3>Отпечаток браузера</h3>
+        
+        
+        <p>
+        У&nbsp;каждого браузера есть свой отпечаток, который состоит из&nbsp;следующих характеристик:
+        </p>
+        <ul>
+        
+        <li>Строка User-agent с&nbsp;указанием версий браузера и&nbsp;ОС, а&nbsp;также типа устройства, языковых настроек и&nbsp;т.п.;
+        
+        <li>Часовой пояс;
+        
+        <li>Разрешение экрана с&nbsp;глубиной цвета;
+        
+        <li>Супер-cookies;
+        
+        <li>Настройки cookie;
+        
+        <li>Системные шрифты;
+        
+        <li>Плагины к&nbsp;браузеру и&nbsp;их&nbsp;версии;
+        
+        <li>Журнал посещений.
+        </li>
+        </ul>
+        <p>
+        Точность идентификации пользователя по&nbsp;отпечатку <a href="http://yinzhicao.org/TrackingFree/crossbrowsertracking_NDSS17.pdf">равна примерно 99,24%</a>.
+        </p>
+        </blockquote>
+
+        <h2>И&nbsp;что мне с&nbsp;этим делать?</h2>
+        
+        <p>
+        Сейчас нам остается только ждать и&nbsp;наблюдать за&nbsp;тем, как развивается ситуация. Если переживаете из-за трекинга ваших данных, попробуйте использовать Firefox или Safari. Они сделают ваши поиски в&nbsp;сети более комфортными и&nbsp;конфиденциальными: по&nbsp;умолчанию эти браузеры блокируют межсайтовые куки, которые используются для отслеживания предпочтений. В&nbsp;целом&nbsp;же, пугаться куки не&nbsp;стоит, так как именно на&nbsp;них держатся некоторые технические моменты в&nbsp;работе сайтов (например, авторизация пользователей). Однако важно понимать, как эта система работает и&nbsp;какими могут быть последствия нажатия кнопки &laquo;принять все куки&raquo;. При этом, куки&nbsp;&mdash; только один из&nbsp;механизмов отслеживания пользователей. &laquo;Шпионить&raquo; за&nbsp;посетителями сайта также умеют трекеры&nbsp;&mdash; например, Google.Analytics или Яндекс.Метрика. А&nbsp;благодаря отпечатку браузера, пользователя можно идентифицировать с&nbsp;большой долей вероятности.
+        </p>
+
+    </article>
+
+    <div class="headline-block">
+        <div class="byline-container">
+            <div class="author-pic">
+                <img src="/img/cookies/lisovsky.jpg" alt="">
+            </div>
+            <div class="author-text">
+                <address class="byline"><p rel="author">Евгений Лисовский</p></address>
+                <div class="byline-desc">Веб-разработчик, автор блога multed.com</div>
+                <div class="byline-link"> <a href="http://multed.com"> </a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="https://www.facebook.com/supernovafuture/" target="_blank" id="fb">Facebook</a>
+        <a href="https://www.instagram.com/supernova_future/" target="_blank">Instagram</a>
+        <a href="https://www.vk.com/supernovafuture/" target="_blank">VK</a>
+        <a href="https://www.twitter.com/supernovafuture/" target="_blank">Twitter</a>
+        <a href="https://www.t.me/supernovafuture/" target="_blank">Telegram</a>
+        <a href="https://supernovamedia.substack.com/p/coming-soon" target="_blank" style="margin-right: 0px !important" id="twitter">Рассылка</a>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="footer-text" id="rating">18 +</div>
+        <div class="footer-text" id="sn-footer">
+            <a href="/about.html">сверхновая</a>
+        </div>
+        <div class="footer-text" id="plausable">
+            <a href="https://plausible.io/supernova.is" target="_blank">Мы&nbsp;используем ответственную аналитику от&nbsp;Plausible</a>
+        </div>
+        <div class="footer-text">
+            <a href="mailto:superfuturenova@gmail.com">Связаться с нами</a>
+        </div>
+    </div>
+
+    <!-- JS onlick method courtesy of Chris Kraack -->
+    <!-- JS link method courtesy of Sergey Surganov and Pranav C Balan -->
+    <script type="text/javascript">
+        Array.prototype.forEach.call(document.querySelectorAll('.text a, .byline-link a'), function (link) { link.target = "_blank" });
+
+        console.log("Не читайте этот код, сохраните себе нервы (╯°□°）╯︵ ┻━┻");
+
+    </script>
+</body>
+</html>

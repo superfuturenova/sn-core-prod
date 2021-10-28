@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <!-- HTML Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover">
+
+
+    <title>Как мы&nbsp;оказались в&nbsp;эпохе надзорного капитализма и&nbsp;каким будет будущее конфиденциальности</title>
+    <meta name="description" content="Разбираемся в&nbsp;вопросе защищенности личных данных в&nbsp;интернете">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="supernova.is">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Как мы&nbsp;оказались в&nbsp;эпохе надзорного капитализма и&nbsp;каким будет будущее конфиденциальности">
+    <meta property="og:description" content="Разбираемся в&nbsp;вопросе защищенности личных данных в&nbsp;интернете">
+    <meta property="og:image" content="/img/surveillance-capitalism/og.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="supernova.is">
+    <meta property="twitter:url" content="supernova.is">
+    <meta name="twitter:title" content="Как мы&nbsp;оказались в&nbsp;эпохе надзорного капитализма и&nbsp;каким будет будущее конфиденциальности">
+    <meta name="twitter:description" content="Разбираемся в&nbsp;вопросе защищенности личных данных в&nbsp;интернете">
+    <meta name="twitter:image" content="/img/surveillance-capitalism/og.jpg">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- PLAUSABLE -->
+
+    <script async defer data-domain="supernova.is" src="https://plausible.io/js/plausible.js"></script>
+
+    <!-- FAVICONS -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png?v=YA376Q73k9">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png?v=YA376Q73k9">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png?v=YA376Q73k9">
+    <link rel="manifest" href="/fav/site.webmanifest?v=YA376Q73k9">
+    <link rel="mask-icon" href="/fav/safari-pinned-tab.svg?v=YA376Q73k9" color="#000000">
+    <link rel="shortcut icon" href="/fav/favicon.ico?v=YA376Q73k9">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!-- STYLE -->
+
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+
+        ::-moz-selection {
+            color: #0043FF;
+            background-color: #0043FF15;
+
+        }
+
+        ::selection {
+            color: #0043FF;
+            background-color: #0043FF15;
+
+        }
+
+        .headline-block {
+            margin-bottom: 1em;
+        }
+
+        h3.chapter {
+            /* margin-top: 0.5em; */
+        }
+
+        h2 {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2.byline {
+            color: #0043FF;
+            opacity: 50%;
+        }
+
+        h2.byline:hover {
+            color: #0043FF;
+            opacity: 100%;
+        }
+
+        html, time {
+            background-color: #E1E9FF;
+        }
+
+        .content {
+            background-color: #E1E9FF;
+        }
+
+        .text {
+            color: #00258b;
+        }
+
+        .text a, .byline-link a, .middle-links a, .links a {
+            color: #0043FF;
+        }
+
+        .middle-links a:hover, .links a:hover {
+            background-color: #0043FF;
+        }
+
+        .footer-text:hover {
+            background-color: #0043FF20;
+        }
+
+        .byline-link a:hover {
+            color: #0043FF70
+        }
+
+        .text blockquote, .byline-container {
+            box-shadow: none;
+            border: 2px #0043FF40 solid;
+            background-color: #E1E9FF;
+        }
+
+        blockquote {
+                background-color: #0043FF30;
+            }
+
+        .text blockquote:hover, .byline-container:hover {
+            box-shadow: none;
+            border: 2px #0043FF solid;
+        }
+
+        .author-pic img {
+            border-right: 2px #0043FF40 solid;
+        }
+
+        .byline-container:hover ~ img {
+            border-right: 2px #0043FF solid;
+        }
+
+
+        @media screen and (max-width: 640px) {
+            .image-container img,
+            .inline-image img {
+                border-radius: 1.4em;
+            }
+
+            .middle-links {
+                padding-top: 0;
+            }
+
+            .middle-links a, .links a {
+                background-color: inherit;
+            }
+
+            .middle-links a:hover, .links a:hover {
+                background-color: #0043FF; 
+            }
+        }
+
+        @media screen and (prefers-color-scheme: dark) {
+            body {
+                background-color: black;
+
+            }
+
+            .content {
+                background-color: black;
+            }
+
+            .text,
+            .headline-block h1.headline {
+                color: white;
+            }
+
+            h2.byline {
+                color: #0043FF;
+                opacity: 50%;
+            }
+
+            h2.byline:hover {
+                color: #0043FF;
+                opacity: 100%;
+            }
+
+            .pre-headline:hover {
+                color: white;
+                transition: 0.1s ease-out;
+            }
+
+            a,
+            .middle-links a,
+            .links a {
+                color: white;
+            }
+
+            .middle-links a:hover,
+            .links a:hover {
+                background-color: white;
+                transition: background 170ms ease-in-out;
+                color: black;
+
+            }
+
+            .byline-container {
+                color: #afafaf;
+            }
+
+            .text blockquote, .byline-container {
+                background-color: #000f3a;
+            }
+
+            .author-text p {
+                color: white;
+            }
+
+            .author-text a:hover {
+                color: white;
+                transition: color 120ms linear;
+            }
+
+            .image-container img,
+            .inline-image img {
+
+                box-shadow: var(--shadow-light);
+            }
+
+            .footer-text:hover {
+                background: #222222;
+                color: #eeeeee;
+            }
+
+            html, time {
+                background-color: #000F3A;
+            }
+
+            .content, body {
+                background-color: #000F3A;
+            }
+
+            .footer-text:hover {
+            background-color: #c6ffbc10;
+            }
+        }
+ 
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="content">
+    <div class="logo" style="padding-top: 1em; padding: 1em;">
+        <a class="logo-link" href="/"">
+            <figure class="image-container inline-image">
+                <img style="display: flex; margin: auto; width: 100%; max-width: 800px; box-shadow: none;" src="/img/surveillance-capitalism/sn-privacy-2.png" alt="">
+            </figure>
+        </a>
+    </div>
+    <div class="middle-links" style="padding-bottom: 0.5em;">
+        <a href="/">&larr; Главная</a>
+        <a href="/about.html">Манифест</a>
+        <a href="/us.html" style="margin-right: 0px !important">О нас</a>
+    </div>
+    <div class="headline-block">
+        <h2 class="headline pre-headline byline" style="margin-top:0.3em;" rel="author" onclick="window.open('https://t.me/culture_worker','_blank');">Степан Ботарев</h2>
+        <h1 class="headline" style="color: #0043FF;">Как мы&nbsp;оказались в&nbsp;эпохе надзорного капитализма и&nbsp;каким будет будущее конфиденциальности</h1>
+
+        <time pubdate datetime="2021-08-25">25 августа 2021</time>
+    </div>
+    <article class="text" lang="ru">
+
+        <blockquote style="margin: auto !important;">
+            <p style="margin-bottom: 0;">Этим текстом мы&nbsp;открываем серию материалов о&nbsp;том, что такое приватность в&nbsp;цифровой среде. Серия задумана как ликбез: мы&nbsp;хотим помочь нашим читателям разобраться в&nbsp;истории вопроса и&nbsp;основных понятиях, объясним, как защитить личные данные и&nbsp;познакомим с&nbsp;альтернативными взглядами на&nbsp;то, как должен быть устроен интернет.</p>
+                                        
+        </blockquote>
+        
+        <em style="margin-top: 1em;">
+        Как&nbsp;Google и&nbsp;террористы &laquo;Аль-Каиды&raquo; (Организация признана террористической и&nbsp;запрещена в&nbsp;РФ) сделали наше общество терпимым к&nbsp;слежке? Как европейский закон GDPR о&nbsp;защите персональных данных и&nbsp;инициативы, подобные ему, пытаются исправить ситуацию? Автор телеграм-канала <a href="https://t.me/culture_worker">&laquo;Работник культуры&raquo;</a> выяснил, что в&nbsp;последнее время происходило с&nbsp;приватностью в&nbsp;интернете и&nbsp;какое будущее нас ждет&nbsp;&mdash; смерть анонимности или социалистический интернет, свободный от&nbsp;государства и&nbsp;корпораций. 
+        </em>
+
+        <h3 class="chapter" style="margin-top: 1em;">•</h3>
+
+        <h2 style="margin-top: 0;">Почему важна приватность в&nbsp;интернете</h2>
+        
+        <p>
+        Летом 2015 года мексиканский наркобарон Эль Чапо сбежал из&nbsp;тюрьмы. Через пару месяцев его сын, похоже, невольно <a href="https://www.nbcnews.com/news/latino/search-el-chapo-did-escaped-drug-kingpins-son-tweet-his-n422381">выдал</a> отца. Он&nbsp;опубликовал в&nbsp;твиттере свою <a href="https://i.insider.com/55ec607e9dd7cc25008b8821?width=500&format=jpeg&auto=webp">фотографию</a> с&nbsp;двумя мужчинами, лица которых прикрыл смайликами. Один из&nbsp;них напоминал знаменитого наркопреступника, а&nbsp;подпись к&nbsp;фото гласила: &laquo;Здесь круто, и&nbsp;вы&nbsp;уже поняли, с&nbsp;кем&nbsp;я&raquo;. Под фотографией высветилась автоматически определившаяся геолокация&nbsp;&mdash; Коста-Рика. 
+        </p>
+        <p>
+        Тогда&nbsp;одному из&nbsp;самых разыскиваемых преступников мира повезло: ему <a href="https://www.nbcnews.com/news/world/el-chapo-reaptured-sent-prison-where-he-escaped-n492956">удалось</a> провести на&nbsp;свободе еще полгода. Однако этот случай показал, что у&nbsp;нас нет контроля над своими собственными данными. Конечно, сын Эль Чапо просто по&nbsp;глупости забыл отключить геолокацию. Но&nbsp;сколько еще в&nbsp;гаджетах таких настроек и&nbsp;алгоритмов, о&nbsp;которых мы&nbsp;забываем, или даже не&nbsp;подозреваем, что они передают посторонним наши данные?  
+        </p>
+        <p>
+        Для&nbsp;бизнеса и&nbsp;правительств, ежесекундно собирающих информацию о&nbsp;нас с&nbsp;помощью гаджетов, разница между преступником и&nbsp;законопослушным гражданином не&nbsp;велика. С&nbsp;нами часто &laquo;обращаются как с&nbsp;подозреваемым в&nbsp;преступлении&raquo;,&nbsp;&mdash; пишет в&nbsp;книге <a href="https://www.penguin.co.uk/books/112/1120394/privacy-is-power/9780552177719.html">&laquo;Приватность&nbsp;&mdash; это власть&raquo;</a> <a href="https://www.carissaveliz.com/">Карисса Велис</a>, преподающая философию в&nbsp;Оксфордском университете.
+        </p>
+  
+        <blockquote>
+        &laquo;Они наблюдают за&nbsp;нами. Они знают, что я&nbsp;пишу эти слова. Они знают, что вы&nbsp;читаете&nbsp;их,&nbsp;&mdash; продолжает Велис. &mdash;&nbsp;Правительства и&nbsp;сотни корпораций шпионят за&nbsp;вами и&nbsp;мной, и&nbsp;каждым, кого мы&nbsp;знаем. Каждую минуту каждого дня. Они следят за&nbsp;нами и&nbsp;записывают все, что могут. Они хотят знать, кто&nbsp;мы, о&nbsp;чем мы&nbsp;думаем и&nbsp;что нас ранит. Они хотят предсказывать и&nbsp;менять наше поведение&raquo;.
+        </blockquote>
+        <p>    
+        Проблема в&nbsp;том, что мы&nbsp;принимаем этот надзор как данность. Опрос, проведенный недавно организацией Pew Research Center <a href="https://www.pewresearch.org/internet/2019/11/15/americans-and-privacy-concerned-confused-and-feeling-lack-of-control-over-their-personal-information/">показал</a>, что примерно 6&nbsp;из&nbsp;10&nbsp;американцев уже и&nbsp;не&nbsp;верят, что компании и&nbsp;правительства могли&nbsp;бы отказаться от&nbsp;сбора данных о&nbsp;них.
+        </p>
+        <p>
+        &laquo;Многие из&nbsp;нас &lt;...&gt; смирились с&nbsp;тем, что все наши действия&nbsp;&mdash; телефонные разговоры, текстовые сообщения, электронные письма и&nbsp;страницы в&nbsp;социальных сетях&nbsp;&mdash; могут просматриваться и&nbsp;прослушиваться третьими лицами. И&nbsp;это обескураживает&raquo;,&nbsp;&mdash; подхватывают Кевин Митник и&nbsp;Уильям Саймон в&nbsp;книге <a href="https://bombora.ru/book/46214/">&laquo;Искусство обмана&raquo;</a>. 
+        </p>
+        <p>
+        Происходит это, рассуждает Карисса Велис, потому что ущерб от&nbsp;утраты приватности невидим. Если кто-то украдет ваш дневник, вы&nbsp;сразу заметите его отсутствие, а&nbsp;вот кража цифровых данных не&nbsp;оставит &laquo;видимого следа&raquo;. Мы&nbsp;осознаем последствия этой потери гораздо позже&nbsp;&mdash; когда на&nbsp;основании конфиденциальных данных, попавших в&nbsp;руки банку, работодателю или страховой компании, нам откажут в&nbsp;кредите, рабочем месте или страховке. 
+        </p>
+        <p>
+        Частная жизнь&nbsp;&mdash; это самое интимное, что у&nbsp;нас есть. Фотографии обнаженного тела, сексуальные фантазии, болезни, страхи и&nbsp;неудачи, наши ошибки и&nbsp;травмы&nbsp;&mdash; все это должно принадлежать только нам и&nbsp;людям, которые нам дороги, считает Велис. 
+        </p>
+        <p>
+        <blockquote>&laquo;Приватность важна, потому что ее&nbsp;недостаток дает другим власть над вами&raquo;,&nbsp;&mdash; заключает&nbsp;она.</blockquote>
+        </p>
+        <p>
+        Кто-то может заявить, что ему нечего скрывать. &laquo;Вы&nbsp;не&nbsp;правы,&nbsp;&mdash; не&nbsp;соглашается Велис,&nbsp;&mdash; если только вы&nbsp;не&nbsp;эксгбиционист с&nbsp;мазохистским желанием пострадать от&nbsp;кражи личности, дискриминации, безработицы, публичного унижения и&nbsp;тоталитаризма. &lt;...&gt; Вам есть, что скрывать и&nbsp;чего бояться, и&nbsp;тот факт, что вы&nbsp;не&nbsp;раздаете направо и&nbsp;налево свои пароли и&nbsp;копии ключей, доказывает это&raquo;.
+        </p>
+        <p>
+        Может показаться, что корпорациям и&nbsp;правительствам нет дела до&nbsp;вас лично, предполагает Велис. Тогда почему на&nbsp;слежку уходит так много сил? Они борются за&nbsp;наше внимание, деньги и&nbsp;голоса. Но&nbsp;именно&nbsp;мы, наши данные&nbsp;&mdash; источник их&nbsp;власти, уверяет Велис.
+        </p>
+        <p>
+        По&nbsp;ее&nbsp;мнению, государство и&nbsp;бизнес злоупотребили этой властью, используя наши данные против нас, и&nbsp;теперь настало время вернуть себе контроль над собственной жизнью.  
+        </p>
+        <p>
+        <blockquote>&laquo;Они ничто без наших данных. Немного законов, немного сопротивления со&nbsp;стороны гражданского общества, несколько компаний, которые будут позиционировать приватность как конкурентное преимущество, и&nbsp;все может закончиться&raquo;,&nbsp;&mdash; заключает Велис.</blockquote>
+        </p>
+        <p>
+        Борьба за&nbsp;контроль над личными данными в&nbsp;том числе необходима для сохранения демократии, добавляет она. Демократия, при которой люди лишены власти над собственной жизнью,&nbsp;&mdash; это фикция. Настоящая личная независимость невозможна без защиты частной жизни. 
+        </p>
+        <p>
+        Битва за&nbsp;контроль над нашими данными уже началась. В&nbsp;2018 году в&nbsp;Европе вступил в&nbsp;силу важнейший закон о&nbsp;защите личной информации&nbsp;&mdash; GDPR (<em>от&nbsp;англ. General Data Protection Regulation</em>). Марк Цукерберг после скандала с&nbsp;Cambridge Analytica заявил, что Facebook теперь <a href="https://www.theverge.com/2019/4/30/18524188/facebook-f8-keynote-mark-zuckerberg-privacy-future-2019">будет</a> уважительнее относиться к&nbsp;личным данным. А&nbsp;Google пообещала отказаться от&nbsp;технологии cookies, позволяющей следить за&nbsp;деятельностью пользователей в&nbsp;интернете&nbsp;&mdash; о&nbsp;чем мы&nbsp;подробно <a href="https://supernova.is/editorial/cookies">писали</a>. Тем не&nbsp;менее, эта борьба далека от&nbsp;завершения. 
+        </p>
+        <p>
+        Как, однако, мы&nbsp;оказались в&nbsp;этих условиях? С&nbsp;чего началась эпоха, которую философ Шошана Зубофф <a href="https://www.publicaffairsbooks.com/titles/shoshana-zuboff/the-age-of-surveillance-capitalism/9781610395694/">окрестила</a> &laquo;эпохой надзорного капитализма&raquo;? Каким интернет был двадцать лет назад, и&nbsp;каким интернет был&nbsp;бы сегодня, если&nbsp;бы технология развивалась иначе?
+        </p>
+
+        <figure class="image-container inline-image">
+            <img src="/img/surveillance-capitalism/2.jpg" alt="">
+            <figcaption class="caption" onclick="window.open('https://instagram.com/ne.zelenka','_blank');">Иллюстрация: Настя Зеленкевич</figcaption>
+        </figure>
+
+        <h2>Google&nbsp;и&nbsp;эпоха надзорного капитализма </h2>
+        
+        <p>
+        До&nbsp;появления в&nbsp;1996 году поисковой системы Google (тогда&nbsp;&mdash; BackRub), интернет 90-х <a href="https://www.wordstream.com/articles/internet-search-engines-history">был другим</a>. Прежние поисковики <a href="https://www.hpe.com/us/en/insights/articles/how-search-worked-before-google-1703.html#:~:text=the%20technique%20used%20by%20all%20search%20engines">выдавали</a> информацию, исходя из&nbsp;того, содержит&nbsp;ли страница слова из&nbsp;поискового запроса. Google добавила к&nbsp;этому механизму систему ранжирования страниц по&nbsp;их&nbsp;авторитетности. Теперь, чем больше других сайтов ссылались на&nbsp;страницу, тем больше была ее&nbsp;значимость и&nbsp;тем выше она отображалась в&nbsp;результатах поиска. Благодаря этому газеты, например, стали более &laquo;видимы&raquo;, чем малоизвестные блоги.  
+        </p>
+        <p>
+        Эта&nbsp;интернет-революция, впрочем, не&nbsp;сделала Google слишком успешной компанией. В&nbsp;2000 году ее&nbsp;годовой доход составил всего 19&nbsp;миллионов долларов. Спустя всего четыре года, однако, эта цифра увеличилась до&nbsp;3,2&nbsp;миллиардов. Как это произошло? 
+        </p>
+        <p>
+        Компания Google осознала, что может использовать личные данные пользователей для персонализированной рекламы. В&nbsp;компании решили, что такая сделка оставит довольными всех: Google будет получать деньги, другие компании смогут рекламировать и&nbsp;продавать свои продукты, а&nbsp;пользователям будет доступен бесплатный поисковик с&nbsp;объявлениями, соответствующими их&nbsp;интересам. 
+        </p>
+        <p>
+        <blockquote>Хотя сделка и&nbsp;казалась удачной, у&nbsp;нее было слабое место: пришлось пожертвовать конфиденциальностью пользователей. Именно тогда человечество совершило первый шаг к&nbsp;эпохе надзорного капитализма, считает Шошана Зубофф.</blockquote>
+        </p>
+        <p>
+        Прежде Google использовала данные о&nbsp;том, как пользователи обращались с&nbsp;поисковиком компании, только чтобы улучшать саму поисковую систему. Но&nbsp;теперь она стала составлять цифровые портреты людей, чтобы понять, что происходит у&nbsp;них в&nbsp;голове&nbsp;&mdash; и&nbsp;какую рекламу стоит им&nbsp;показывать. Как отмечает Карисса Велис, этот подход стал основной схемой получения прибыли для большинства интернет-компаний. 
+        </p>
+        <p>
+        <blockquote>&laquo;Google превратила пользователей в&nbsp;продукт, а&nbsp;другие последовали за&nbsp;ней&raquo;,&nbsp;&mdash; пишет Велис.</blockquote>
+        </p>
+        <p>
+        Причем Google не&nbsp;афишировала свою схему монетизации. Один из&nbsp;бывших руководителей компании назвал это &laquo;стратегией утаивания&raquo; (<em>англ. hiding strategy</em>). Другой экс-менеджер Google Эрик Шмидт так описал желание основателя компании Ларри Пейджа не&nbsp;разглашать секрет успеха корпорации: &laquo;Никто не&nbsp;знал, как много данных мы&nbsp;собираем, но&nbsp;мы&nbsp;не&nbsp;делали с&nbsp;ними ничего плохого. Так зачем начинать разговор, который всех только смутит и&nbsp;встревожит?&raquo; 
+        </p>
+        <p>
+        Позже, в&nbsp;2010-е, этот разговор все-таки начнется. Впрочем эта дискуссия, как и&nbsp;успех Google, могли и&nbsp;не&nbsp;случиться, если&nbsp;бы не&nbsp;теракт 8&nbsp;сентября 2001 года. 
+        </p>
+        <h2>Начало тотальной слежки </h2>
+        
+        <p>
+        В&nbsp;конце 1990-х власти США задумались о&nbsp;законодательном регулировании в&nbsp;области приватности информации. В&nbsp;2000 году американская Федеральная торговая комиссия предложила Конгрессу ввести законы, которые обяжут интернет-компании сообщать пользователям о&nbsp;том, как используются их&nbsp;данные. Пользователи сами выбирали&nbsp;бы, что они позволят Google и&nbsp;подобным компаниям делать с&nbsp;этими данными, при желании получали&nbsp;бы доступ к&nbsp;этой информации, а&nbsp;компании гарантировали&nbsp;бы ее&nbsp;защиту. 
+        </p>
+        <p>
+        Однако&nbsp;11&nbsp;сентября 2001 года террористы из&nbsp;&laquo;Аль-Каиды&raquo; (Организация признана террористической и&nbsp;запрещена в&nbsp;РФ) совершили ряд атак на&nbsp;американские города. Погибли почти три тысячи человек. &laquo;Регулирование приватности отложили в&nbsp;долгий ящик&raquo;,&nbsp;&mdash; пишет Карисса Велис. 
+        </p>
+        <p>
+        <blockquote>Американские власти провозгласили главным приоритетом безопасность, а&nbsp;лозунгом, который общество встретило с&nbsp;сочувствием, стала фраза &laquo;Больше никогда&raquo;. Спецслужбы воспользовались национальной трагедией как поводом для начала тотальной слежки.</blockquote> 
+        </p>
+        <p>
+        Ее масштаб стал известен, только когда экс-агент АНБ Эдвард Сноуден в&nbsp;2013 году <a href="https://www.theguardian.com/world/2013/jun/09/edward-snowden-nsa-whistleblower-surveillance">передал</a> СМИ разоблачительные материалы о&nbsp;работе своих бывших коллег.
+        </p>
+        <p>
+        «<a href="https://www.dw.com/ru/%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%BE-%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D0%B8-%D0%B0%D0%BD%D0%B1/t-35968488">АНБ</a>&nbsp;собирало данные Microsoft, Yahoo, Google, Facebook, YouTube, Skype, Apple и&nbsp;многих других компаний,&nbsp;&mdash; пишет Велис. &mdash;&nbsp;Это были электронные письма, фото, видео- и&nbsp;аудио-чаты, поисковая история и&nbsp;все остальные данные, хранящиеся в&nbsp;облаке&raquo;. Компании и&nbsp;властные структуры США <a href="https://theintercept.com/2017/02/22/how-peter-thiels-palantir-helped-the-nsa-spy-on-the-whole-world/">стали</a> регулярно обмениваться персональными данными пользователей, а&nbsp;другие страны, в&nbsp;том числе Россия, <a href="https://www.vedomosti.ru/technology/articles/2017/08/14/729199-fsb-dannim-polzovatelei">взяли</a> с&nbsp;Америки пример. До&nbsp;Google, зарабатывающей на&nbsp;таргетированной рекламе, уже никому не&nbsp;было&nbsp;дела. 
+        </p>
+        <p>
+        Впрочем, продолжалось это недолго. Чем чаще в&nbsp;СМИ появлялись публикации об&nbsp;утечках персональных данных, тем больше общество тревожилось о&nbsp;своей приватности. 
+        </p>
+        <h2>«Будущее — за приватностью»</h2>
+        
+        <p>
+        О&nbsp;гаджетах как о&nbsp;&laquo;Большом Брате в&nbsp;вашем кармане&raquo; <a href="http://edition.cnn.com/2001/TECH/ptech/04/20/location.services.idg/index.html">заговорили</a> уже в&nbsp;1999&nbsp;году, когда появились первые телефоны с&nbsp;GPS. Тем не&nbsp;менее, еще в&nbsp;2002 году интернет-пользователей больше <a href="https://www.cc.gatech.edu/~aianton/assets/2010_ieees-p_privacyvalues.pdf">беспокоила</a> безопасность передачи данных и&nbsp;их&nbsp;хранения на&nbsp;собственном компьютере, нежели сбор персональных данных третьими лицами. 
+        </p>
+        <p>
+        Когда&nbsp;в&nbsp;2004 году появился Facebook, а&nbsp;в&nbsp;2007 году&nbsp;&mdash; айфон, люди встретили их&nbsp;с&nbsp;восторгом. К&nbsp;2010 году количество проданных айфонов <a href="https://www.macworld.com/article/209585/applefin.html#:~:text=in%20the%202010%20fiscal%20year%2C%20apple%20sold%2040%20million%20phones">достигло</a> 40&nbsp;миллионов, а&nbsp;число пользователей Facebook&nbsp;&mdash; <a href="https://www.statista.com/chart/10047/facebooks-monthly-active-users/">полумиллиарда</a>, и&nbsp;эти цифры продолжали расти. Как следствие, пользователи предоставляли компаниям все больше своих данных. Чаще стали происходить и&nbsp;их&nbsp;утечки. 
+        </p>
+        <p>
+        Первая крупная утечка <a href="https://money.cnn.com/2005/04/20/technology/security_dsw_idbreach/">случилась</a> еще в&nbsp;2005-м, но&nbsp;по-настоящему угрожающего размаха такие киберпреступления достигли в&nbsp;2010-х. Как <a href="https://clario.co/blog/privacy-definition-over-years/">отмечают</a> в&nbsp;блоге компании Clario, предоставляющей услуги в&nbsp;области кибербезопасности, с&nbsp;2012 по&nbsp;2017 год <a href="https://en.wikipedia.org/wiki/List_of_data_breaches">произошло</a> больше 130 крупных утечек данных. Самая крупная <a href="https://www.reuters.com/article/us-yahoo-cyber-idUSKCN1C82O1">случилась</a> в&nbsp;2013&nbsp;году, когда взломали 3&nbsp;миллиарда аккаунтов почтового сервиса Yahoo! 
+        </p>
+        <p>
+        Причем в&nbsp;руки киберпреступников попадали данные и&nbsp;более интимного характера. В&nbsp;2015&nbsp;году, например, <a href="https://www.forbes.com/sites/danmunro/2015/12/31/data-breaches-in-healthcare-total-over-112-million-records-in-2015">стало известно</a> о&nbsp;похищении 112 миллионов записей с&nbsp;медицинскими данными американских жителей.
+        </p>
+
+        <p>
+        Интернет-пользователи поняли, как много личных данных находится в&nbsp;руках посторонних людей и&nbsp;как легко они могут попасть к&nbsp;злоумышленникам. Согласно опросу Pew Research Center, проведенному в&nbsp;2013&nbsp;году, 91% опрошенных <a href="https://www.pewresearch.org/fact-tank/2016/09/21/the-state-of-privacy-in-america/#:~:text=6fully%2091%25%20of%20adults%20agree%20or%20blockquotely%20agree%20that%20consumers%20have%20lost%20control%20of%20how%20personal%20information%20is%20collected%20and%20used%20by%20companies">считали</a>, что общество утратило контроль над тем, как компании собирают и&nbsp;используют данные пользователей.&nbsp;86% участников исследования <a href="https://www.pewresearch.org/fact-tank/2016/09/21/the-state-of-privacy-in-america/">признались</a>, что пробовали скрыть свой &laquo;цифровой след&raquo;. В&nbsp;опросе&nbsp;же 2015&nbsp;года, проведенного той&nbsp;же Pew Research Center, 65% респондентов <a href="https://www.pewresearch.org/internet/2015/05/20/americans-attitudes-about-privacy-security-and-surveillance/pi_15-05-20_privacysecurityattd00/">сообщили</a>: для них важна возможность контролировать, какую информацию о&nbsp;них собирают. 
+        </p>
+        <p>
+        В&nbsp;2018 году <a href="https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election">The Guardian</a> и&nbsp;<a href="https://www.nytimes.com/2018/03/17/us/politics/cambridge-analytica-trump-campaign.html">The New York Times</a> выпустили серию расследований о&nbsp;том, как компания Cambridge Analytica использовала данные о&nbsp;поведении более 50&nbsp;миллионов американцев в&nbsp;Facebook (позже стали говорить о&nbsp;<a href="https://www.wired.com/story/facebook-exposed-87-million-users-to-cambridge-analytica/">87</a>&nbsp;и&nbsp;даже о&nbsp;<a href="https://www.cbc.ca/radio/day6/episode-359-harvey-weinstein-a-stock-market-for-sneakers-trump-s-data-mining-the-curious-incident-more-1.4348278/data-mining-firm-behind-trump-election-built-psychological-profiles-of-nearly-every-american-voter-1.4348283">220&nbsp;миллионах</a>). Из&nbsp;собранной информации собирали профили людей, в&nbsp;которых учитывались убеждения, интересы, особенности характера и&nbsp;многое другое. На&nbsp;их&nbsp;основе компания запустила таргетированную политическую рекламу&nbsp;и, <a href="https://www.theguardian.com/uk-news/2018/mar/23/leaked-cambridge-analyticas-blueprint-for-trump-victory">вероятно</a>, помогла Дональду Трампу выиграть президентские выборы в&nbsp;США 2016 года. 
+        </p>
+        <p>
+        Главе&nbsp;Facebook пришлось выступить с&nbsp;объяснениями перед американским сенатом и&nbsp;<a href="https://www.washingtonpost.com/news/the-switch/wp/2018/04/10/transcript-of-mark-zuckerbergs-senate-hearing/">пообещать</a> усилить контроль за&nbsp;безопасностью пользовательских данных. Спустя год Марк Цукерберг, в&nbsp;2010 году <a href="https://www.theguardian.com/technology/2010/jan/11/facebook-privacy">заявивший</a>, что приватность&nbsp;&mdash; это устаревшая социальная норма, рассказал о&nbsp;новом направлении, в&nbsp;котором будет развиваться Facebook. 
+        </p>
+        <blockquote>&laquo;Будущее&nbsp;&mdash; за&nbsp;приватностью&raquo;,&nbsp;&mdash; <a href="https://www.theverge.com/2019/4/30/18524188/facebook-f8-keynote-mark-zuckerberg-privacy-future-2019">заявил</a> бизнесмен.</blockquote>  
+        <p>&laquo;Я&nbsp;понимаю, многие люди не&nbsp;верят, что мы&nbsp;настроены серьезно,&nbsp;&mdash; сказал Цукерберг. &mdash;&nbsp;Прямо сейчас у&nbsp;нас, мягко говоря, не&nbsp;самая хорошая репутация в&nbsp;том, что касается приватности. Но&nbsp;я&nbsp;твердо намерен &lt;...&gt; начать новую главу в&nbsp;истории нашего продукта&raquo;. Его цель, убеждал бизнесмен,&nbsp;&mdash; &laquo;построить мир, в&nbsp;котором мы&nbsp;сможем быть сами собой и&nbsp;жить свободно&raquo;. 
+        </p>
+        <p>
+        Но&nbsp;еще более важным событием стало появление в&nbsp;Европейском Союзе &laquo;Общего регламента по&nbsp;защите данных&raquo;, или <a href="https://gdpr-info.eu/">GDPR</a> (от&nbsp;англ. General Data Protection Regulation). Принятый еще в&nbsp;2016&nbsp;году, спустя два года он&nbsp;вступил в&nbsp;силу. Документ обязал компании из&nbsp;ЕС, а&nbsp;также фирмы, предоставляющие товары и&nbsp;услуги европейцам, выполнять правила по&nbsp;защите личной информации своих клиентов. 
+        </p>
+        <p>
+        Теперь нельзя было просто сообщить пользователю из&nbsp;ЕС, что компания собирает куки. Необходимо было объяснить, какие именно данные компания хранит у&nbsp;себя на&nbsp;серверах, и&nbsp;позволить клиенту самому выбрать, какой информацией он&nbsp;готов делиться. Теперь перед тем, как взять согласие на&nbsp;обработку персональных данных при регистрации на&nbsp;сайте или в&nbsp;приложении, компания обязана простым языком объяснить пользователю-европейцу его права. 
+        </p>
+        <p>
+        По&nbsp;запросу компания должна предоставить сведения о&nbsp;том, что знает о&nbsp;пользователе и&nbsp;как использует эту информацию. Если&nbsp;же человеку не&nbsp;понравится, как обращаются с&nbsp;его данными, он&nbsp;может отозвать согласие на&nbsp;их&nbsp;обработку, а&nbsp;в&nbsp;случае крупной утечки фирма должна уведомить его в&nbsp;течение трех&nbsp;суток. 
+        </p>
+        <p>
+        <blockquote>За&nbsp;нарушение правил грозят штрафы от&nbsp;10&nbsp;миллионов евро или 2&nbsp;процентов годового оборота.</blockquote>
+        </p>
+        <p>
+        В&nbsp;поддержку GDPR <a href="https://www.washingtonpost.com/opinions/mark-zuckerberg-the-internet-needs-new-rules-lets-start-in-these-four-areas/2019/03/29/9e6f0504-521a-11e9-a3f7-78b7525a8d5f_story.html">высказался</a> в&nbsp;том числе Цукерберг, предложив на&nbsp;основе регламента выработать единые международные стандарты по&nbsp;законодательной защите цифровых данных. Цукерберга, впрочем, сразу&nbsp;же <a href="https://www.eff.org/deeplinks/2019/04/mark-zuckerberg-does-not-speak-internet">обвинили</a> в&nbsp;корысти. По&nbsp;мнению критиков, Facebook достиг нынешнего размаха в&nbsp;том числе благодаря отсутствию таких законов. Единое&nbsp;же законодательство для компаний любого размера в&nbsp;любой части мира не&nbsp;позволит конкурентам Facebook когда-либо достигнуть масштабов компании. 
+        </p>
+
+        <figure class="image-container inline-image">
+            <img src="/img/surveillance-capitalism/1.jpg" alt="">
+            <figcaption class="caption" onclick="window.open('https://instagram.com/ne.zelenka','_blank');">Иллюстрация: Настя Зеленкевич</figcaption>
+        </figure>
+
+        <h2>GDPR&nbsp;и&nbsp;другие законы по&nbsp;защите онлайн-приватности</h2>
+        
+        <p>
+        Законы, похожие на&nbsp;GDPR, стали принимать и&nbsp;в&nbsp;других странах. Уже в&nbsp;2018 году в&nbsp;Австралии в&nbsp;силу <a href="https://cpl.thalesgroup.com/compliance/privacy-act-australia#:~:text=it%20took%20effect%20on%20february%2022%2C%202018">вступила</a> поправка в&nbsp;духе GDPR к&nbsp;местному Закону о&nbsp;частной жизни. С&nbsp;1&nbsp;января 2020 года Закон о&nbsp;защите неприкосновенности частной жизни потребителей <a href="https://insights.comforte.com/ccpa-data-privacy-like-gdpr-data-security-like-pci-dss">начал</a> действовать в&nbsp;американском штате Калифорния. А&nbsp;кроме того, калифорнийский Сан-Франциско <a href="https://www.bbc.com/news/technology-48276660">стал</a> первым в&nbsp;США городом, законодательно запретившим распознавание&nbsp;лиц.
+        </p>
+        <p>
+        В&nbsp;2020 году также <a href="https://iapp.org/news/a/an-overview-of-brazils-lgpd/">вступил в&nbsp;силу</a> бразильский Всеобщий закон о&nbsp;защите данных. А&nbsp;в&nbsp;Японии <a href="https://portswigger.net/daily-swig/changes-to-japans-data-privacy-law-echo-europes-gdpr">внесли</a> изменения в&nbsp;Закон о&nbsp;защите личной информации 2005&nbsp;года, чтобы он&nbsp;больше соответствовал европейскому GDPR. Правки в&nbsp;скором времени <a href="https://fpf.org/blog/a-new-era-for-japanese-data-protection-2020-amendments-to-the-appi/">начнут</a> действовать. <a href="https://ec.europa.eu/commission/presscorner/detail/en/qanda_20_1166">Обновили</a> законодательство о&nbsp;защите персональных данных также парламенты Чили, Южной Кореи, Кении, Индии, Туниса, Индонезии, Тайваня и&nbsp;даже&nbsp;<a href="https://www.endpointprotector.com/blog/data-protection-legislation-around-the-world/">Китая</a>. 
+        </p>
+        <p>
+        Китайские пользователи <a href="https://www.endpointprotector.com/blog/data-protection-legislation-around-the-world/">смогут</a> теперь отозвать право на&nbsp;сбор персональных данных и&nbsp;потребовать удалить уже собранную информацию. Китайский вариант GDPR, впрочем, отличается от&nbsp;европейского более строгим отношением к&nbsp;передаче данных граждан за&nbsp;рубеж. Перед тем, как информация пересечет границы Китая, местный аналог Роскомнадзора&nbsp;&mdash; Администрация киберпространства Китая&nbsp;&mdash; должен провести их&nbsp;проверку: например, <a href="https://www.isaca.org/resources/news-and-trends/industry-news/2021/cross-border-data-transfer-and-data-localization-requirements-in-china#:~:text=i.e.%2C%20the%20necessity%20of%20the%20data%20transfer">оценить</a> саму необходимость такой передачи. Некоторые <a href="https://www.pwccn.com/en/issues/cybersecurity-and-privacy/china-issues-draft-personal-information-protection-law-consultation-nov2020.html">называют</a> такой подход суверенитетом данных.
+        </p>
+        <p>
+        Однако&nbsp;во&nbsp;многих странах, включая США, еще нет такого&nbsp;же мощного и&nbsp;единого закона о&nbsp;защите данных в&nbsp;интернете, как в&nbsp;Евросоюзе. Россия не&nbsp;исключение. Хотя в&nbsp;нашей стране еще с&nbsp;2006 года действует Федеральный закон &#8470;&nbsp;152 <a href="http://www.consultant.ru/document/cons_doc_LAW_61801/">&laquo;О&nbsp;персональных данных&raquo;</a>, с&nbsp;GDPR сравнить его нельзя. Там <a href="https://habr.com/ru/company/cloud_mts/blog/416131/#:~:text=%D0%BE%D0%B4%D0%BD%D0%B0%D0%BA%D0%BE%20%D0%BA%20%D1%81%D0%BE%D0%B6%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D1%8E%2C%20%D0%B2%20%D0%B7%D0%B0%D0%BA%D0%BE%D0%BD%D0%B5%20%D0%BD%D0%B5%D1%82%20%D0%BF%D0%B5%D1%80%D0%B5%D1%87%D0%BD%D1%8F%2C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B8%20%D0%B1%D1%8B%20%D1%83%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%BB%2C%20%D1%87%D1%82%D0%BE%20%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE%2C%20%D0%B0%20%D1%87%D1%82%D0%BE%20%D0%BD%D0%B5%D0%BB%D1%8C%D0%B7%D1%8F%20%D1%81%D1%87%D0%B8%D1%82%D0%B0%D1%82%D1%8C%20%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC%D0%B8%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%D0%B8.">нет</a> определения персональных данных, а&nbsp;максимальный штраф за&nbsp;нарушение закона&nbsp;&mdash; всего 75&nbsp;тысяч рублей. Такое наказание несопоставимо со&nbsp;штрафами от&nbsp;10&nbsp;миллионов евро в&nbsp;Евросоюзе. 
+        </p>
+        <p>
+        К&nbsp;счастью, GDPR частично <a href="https://www.forbes.ru/biznes/367365-dela-povazhnee-pochemu-rossiyskie-kompanii-ne-zashchishchayut-lichnuyu-informaciyu">распространяется</a> и&nbsp;на&nbsp;россиян: например, если российская компания хочет торговать товарами или услугами в&nbsp;ЕС, ей&nbsp;придется соблюдать европейский закон о&nbsp;данных. Аналогично, интернет-магазин, зарегистрированный в&nbsp;ЕС, будет соблюдать ваши права, опираясь на&nbsp;GDPR. Именно поэтому большинство сайтов, на&nbsp;которые вы&nbsp;заходите, спрашивает вас, согласны&nbsp;ли вы&nbsp;принять cookies и&nbsp;другие правила обработки ваших данных на&nbsp;этом сайте, даже если вы&nbsp;не&nbsp;находитесь на&nbsp;территории&nbsp;ЕС. 
+        </p>
+        <h2>Что дальше?</h2>
+        
+        <p>
+        По&nbsp;оценкам исследовательской компании Gartner, уже к&nbsp;2023 году данные&nbsp;65% населения Земли <a href="https://www.gartner.com/en/newsroom/press-releases/2020-09-14-gartner-says-by-2023--65--of-the-world-s-population-w">будут</a> защищены одним из&nbsp;законов, подобных GDPR. 
+        </p>
+        <p>
+        Как&nbsp;<a href="https://ec.europa.eu/commission/presscorner/detail/en/qanda_20_1166">отмечают</a> в&nbsp;Европейской комиссии, одно из&nbsp;главных достоинств GDPR&nbsp;&mdash; в&nbsp;том, что он&nbsp;сделал конфиденциальность конкурентным преимуществом в&nbsp;бизнесе. Осознание людьми своего права на&nbsp;защиту данных в&nbsp;интернете, считают в&nbsp;компании по&nbsp;защите персональных данных Data Privacy Manager, <a href="https://dataprivacymanager.net/5-future-data-privacy-predictions-for-2021/">приведет</a> к&nbsp;большему количеству судебных исков о&nbsp;нарушении приватности.
+        </p>
+        <p>
+        Впрочем, прогнозы других экспертов не&nbsp;так оптимистичны. Как замечает Карисса Велис, неприкосновенность частной жизни оказалась под угрозой из-за коронавируса. Вмешательство стали маскировать под попытки предотвратить распространение инфекции. В&nbsp;докладе <a href="https://institute.global/">Института глобальных изменений Тони Блэра</a> такие нарушения <a href="https://institute.global/policy/price-worth-paying-tech-privacy-and-fight-against-covid-19">назвали</a> &laquo;ценой, которую стоило заплатить&raquo; за&nbsp;борьбу с&nbsp;эпидемией.
+        </p>
+        <p>
+        Компания Access Now, занимающаяся защитой цифровых прав по&nbsp;всему миру, <a href="https://www.accessnow.org/covid-19-contact-tracing-apps-in-mena-a-privacy-nightmare/">приводит</a> несколько примеров стран, где такую цену сочли уместной. Так, в&nbsp;Бахрейне местных жителей и&nbsp;гостей обязали установить приложения и&nbsp;носить браслеты, которые сообщали властям о&nbsp;передвижениях их&nbsp;владельцев. Нарушение каралось большим штрафом или заключением на&nbsp;срок от&nbsp;трех месяцев. 
+        </p>
+        <p>
+        <blockquote>Похожие меры приняли в&nbsp;Саудовской Аравии, где электронный браслет обязали носить прибывших из-за границы. Здесь за&nbsp;нарушение можно было сесть в&nbsp;тюрьму на&nbsp;срок до&nbsp;двух лет или получить штраф в&nbsp;53&nbsp;тысячи долларов (или и&nbsp;то, и&nbsp;другое).</blockquote>
+        </p>
+        <p>
+        А&nbsp;в&nbsp;Сингапуре власти <a href="https://www.theguardian.com/world/2021/jan/05/singapore-says-police-will-be-given-access-to-covid-19-contact-tracing-data">заявили</a>, что предоставят полиции доступ к&nbsp;данным, собранным приложением для отслеживания заразившихся COVID-19&nbsp;TraceTogether. Их&nbsp;якобы будут использовать для расследования преступлений.
+        </p>
+        <p>
+        Еще&nbsp;за&nbsp;несколько месяцев до&nbsp;пандемии редакция издания Gizmodo <a href="https://gizmodo.com/what-will-the-internet-look-like-in-2030-1837984973">обратилась</a> к&nbsp;экспертам в&nbsp;области коммуникаций и&nbsp;технологий с&nbsp;просьбой предсказать, каким интернет будет в&nbsp;2030&nbsp;году. Многие из&nbsp;предсказаний оказались не&nbsp;очень радужными. 
+        </p>
+        <p>
+        Сара&nbsp;Энн Оутс, американский профессор журналистики в&nbsp;Мерилендском университете, например, заявила, что приватность&nbsp;&mdash; мертва, а&nbsp;к&nbsp;2030 году умрет и&nbsp;анонимность в&nbsp;интернете. Ведь наше поведение в&nbsp;сети оставляет след, по&nbsp;которому нас легко опознать. 
+        </p>
+        <p>
+        Директор лондонского <a href="https://camri.ac.uk/">Института исследований коммуникаций и&nbsp;медиа</a> Кристиан Фукс был менее категоричен: &laquo;Интернет и&nbsp;общество взаимосвязаны. Как интернет будет выглядеть в&nbsp;2030-м, зависит от&nbsp;того, как будет развиваться общество&raquo;. По&nbsp;мнению Фукса, мир находится в&nbsp;точке бифуркации. 
+        </p>
+        <p>
+        <blockquote>&laquo;Если нынешние тенденции к&nbsp;национализму и&nbsp;авторитаризму сохранятся и&nbsp;усилятся, то&nbsp;будущее&nbsp;&mdash; это война и&nbsp;фашизм&raquo;,&nbsp;&mdash; считает Фукс.</blockquote>
+        </p>
+        <p>
+        В&nbsp;фашистском обществе повсюду будет правая пропаганда, распространяемая медиа-платформами корпораций-монополистов и&nbsp;правительств. Общество будет аполитично и&nbsp;молчаливо. Не&nbsp;будет ни&nbsp;свободы слова, ни&nbsp;политической оппозиции. &laquo;Фашистский интернет станет комбинацией корпоративной и&nbsp;государственной слежки&raquo;,&nbsp;&mdash; говорит&nbsp;Фукс.  
+        </p>
+        <p>
+        Альтернативой такому сценарию эксперт видит &laquo;социалистический интернет&raquo;. В&nbsp;таком интернете будет много общественных платформ, не&nbsp;зависящих ни&nbsp;от&nbsp;государства, ни&nbsp;от&nbsp;корпораций, а&nbsp;также много самоуправляемых организаций, принадлежащих самим пользователям. В&nbsp;обществе с&nbsp;&laquo;социалистическим интернетом&raquo; люди получат равный доступ к&nbsp;образованию и&nbsp;саморазвитию. Рабочее время будет значительно урезано&nbsp;&mdash; чтобы люди могли развивать свой творческий потенциал и&nbsp;критическое мышление. 
+        </p>
+        <p>
+            &laquo;В&nbsp;1915 году Роза Люксембург написала, что &bdquo;буржуазное общество стоит на&nbsp;перепутье: либо переход к&nbsp;социализму, либо возврат к&nbsp;варварству&ldquo;. Спустя более чем 100&nbsp;лет, и&nbsp;общество, и&nbsp;интернет стоят на&nbsp;том&nbsp;же перепутье&raquo;,&nbsp;&mdash; заключает&nbsp;Фукс.
+        </p>
+
+    </article>
+
+    <div class="headline-block">
+        <div class="byline-container" onclick="window.open('https://t.me/culture_worker','_blank');">
+            <div class="author-pic">
+                <img src="/img/stoletnyaya-lampochka-vs-medlennye-ajfony/botaryev.jpg" alt="">
+            </div>
+            <div class="author-text">
+                <address class="byline"><p rel="author" href="https://t.me/culture_worker">Степан Ботарев</p></address>
+                <div class="byline-desc">Автор <i>сверхновой</i> и&nbsp;телеграм-канала &laquo;Работник культуры&raquo;</div>
+                <div class="byline-link"> <a href="https://t.me/culture_worker">@culture_worker</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="links">
+        <a href="https://www.facebook.com/supernovafuture/" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/supernova_future/" target="_blank">Instagram</a>
+        <a href="https://www.vk.com/supernovafuture/" target="_blank">VK</a>
+        <a href="https://www.twitter.com/supernovafuture/" target="_blank">Twitter</a>
+        <a href="https://www.t.me/supernovafuture/" target="_blank">Telegram</a>
+        <a href="https://supernovamedia.substack.com/p/coming-soon" target="_blank" style="margin-right: 0px !important" id="twitter">Рассылка</a>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="footer-text" id="rating">18 +</div>
+        <div class="footer-text" id="sn-footer">
+            <a href="/about.html">сверхновая</a>
+        </div>
+        <div class="footer-text" id="plausable">
+            <a href="https://plausible.io/supernova.is" target="_blank">Мы&nbsp;используем ответственную аналитику от&nbsp;Plausible</a>
+        </div>
+        <div class="footer-text">
+            <a href="mailto:superfuturenova@gmail.com">Связаться с нами</a>
+        </div>
+    </div>
+
+    <!-- JS onlick method courtesy of Chris Kraack -->
+    <!-- JS link method courtesy of Sergey Surganov and Pranav C Balan -->
+    <script type="text/javascript">
+        Array.prototype.forEach.call(document.querySelectorAll('.text a, .byline-link a'), function (link) { link.target = "_blank" });
+
+        console.log("Не читайте этот код, сохраните себе нервы (╯°□°）╯︵ ┻━┻");
+
+    </script>
+
+</body>
+</html>

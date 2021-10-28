@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <!-- HTML Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cверхновая. Исследовательское медиа о будущем, интернете и свободе</title>
+    <meta name="description" content="Мы хотим найти коллективный ответ на вопрос: в каком будущем мы хотим жить, и как нам к нему прийти?">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="supernova.is">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cверхновая. Исследовательское медиа о будущем, интернете и свободе">
+    <meta property="og:description" content="Мы хотим найти коллективный ответ на вопрос: в каком будущем мы хотим жить, и как нам к нему прийти?">
+    <meta property="og:image" content="/img/sn-og.jpg">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="supernova.is">
+    <meta property="twitter:url" content="https://supernova.is">
+    <meta name="twitter:title" content="Cверхновая. Исследовательское медиа о будущем, интернете и свободе">
+    <meta name="twitter:description" content="Мы хотим найти коллективный ответ на вопрос: в каком будущем мы хотим жить, и как нам к нему прийти?">
+    <meta name="twitter:image" content="/img/sn-og.jpg">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- PLAUSABLE -->
+
+    <script async defer data-domain="supernova.is" src="https://plausible.io/js/plausible.js"></script>
+
+    <!-- FAVICONS -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/fav/apple-touch-icon.png?v=YA376Q73k9">
+    <link rel="icon" type="image/png" sizes="32x32" href="/fav/favicon-32x32.png?v=YA376Q73k9">
+    <link rel="icon" type="image/png" sizes="16x16" href="/fav/favicon-16x16.png?v=YA376Q73k9">
+    <link rel="manifest" href="/fav/site.webmanifest?v=YA376Q73k9">
+    <link rel="mask-icon" href="/fav/safari-pinned-tab.svg?v=YA376Q73k9" color="#000000">
+    <link rel="shortcut icon" href="/fav/favicon.ico?v=YA376Q73k9">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <!-- STYLE -->
+
+    <link rel="stylesheet" href="/style.css">
+
+	<style>
+
+        #new a {
+            color: black;
+
+            border: 1px #00000090 solid;
+            padding: 0.3em;
+            padding-top: 0;
+            padding-bottom: 0.15em;
+            margin: 0.1em;
+        }
+
+        #new a:hover {
+            color: white;
+            background-color: black;
+            opacity: 100%;
+            border: 1px solid transparent;
+
+            /* -webkit-animation: pulse 1s infinite;
+            animation: pulse 1s infinite; */
+        }
+
+        @media screen and (prefers-color-scheme: dark) {
+            #new a {
+            color: white;
+
+            border: 1px #ffffff50 solid;
+            padding: 0.3em;
+            padding-top: 0;
+            padding-bottom: 0.15em;
+            margin: 0.1em;
+        }
+
+            #new a:hover {
+                color: black;
+                background-color: white;
+                opacity: 100%;
+                border: 1px solid transparent;
+
+                /* -webkit-animation: pulse 1s infinite;
+                animation: pulse 1s infinite; */
+            }
+        }
+
+		@media screen and (min-width: 840px) {
+
+			.author-pic img {
+				border-right: none;
+				border-bottom: 1px solid rgba(10, 10, 10, 0.2);
+				border-radius: 0.3em 0.3em 0 0;
+                max-height: 240px;
+			}
+
+			.byline-container {
+				display: flex;
+				flex-flow: column nowrap;
+				width: 100%;
+				justify-content: flex-start;
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
+
+			.byline-container img{
+				width: 100%;
+				border-radius: 0.3em 0.3em 0 0;
+			}
+
+			.author-text {
+
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
+				
+			}
+
+			.byline-container {
+				max-width: 400px;
+				margin-left: 1em;
+				margin-right: 1em;
+			}
+
+            .headline-block {
+                margin-top: 3em;
+                margin-bottom: 3em;
+            }
+
+            #fwd-letters {
+                /* background-color: #F3FAF2; */
+                box-shadow: #83B17B50 0px 0px 0px 1px, #83B17B90 0px 1px 10px;
+                /* border: 2px #83b17b40 solid; */
+            }
+
+            #privacy {
+                box-shadow: #0043FF50 0px 0px 0px 1px, #0043FF90 0px 1px 5px;
+            }
+
+            #privacy:hover {
+                box-shadow: #0043FF50 0px 0px 0px 1px, #0043FF90 0px 1px 10px;
+            }
+
+            #fwd-letters .author-pic img {
+                border-bottom: 1px solid #0043FF50 !important;
+            }
+
+            #fwd-letters:hover {
+                box-shadow: #83B17B80 0px 0px 0px 1px, #83B17B90 0px 1px 15px;
+            }
+
+            #fwd-letters .byline p {
+                color: #6a9762;
+            }
+
+            #privacy .byline p {
+                color: #0043FF;
+            }
+
+            #privacy a {
+                color: #0043FF;
+            }
+
+            #fwd-letters a {
+                color: #83B17B;
+            }
+
+            #fwd-letters a:hover {
+                opacity: 50%;
+            }
+
+		}
+
+        @media screen and (min-width: 840px) and (prefers-color-scheme: dark) {
+
+            .author-pic img {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+            }
+
+            #fwd-letters {
+                /* background-color: #F3FAF2; */
+                box-shadow: #83B17B80 0px 0px 0px 1px;
+                /* border: 2px #83b17b40 solid; */
+            }
+
+            #fwd-letters:hover {
+                box-shadow: #83B17B 0px 0px 0px 1px;
+                border-color: ;
+            }
+
+            #privacy {
+                box-shadow: #0043FF80 0px 0px 0px 1px;
+            }
+
+            #privacy:hover {
+                box-shadow: #0043FF 0px 0px 0px 1px;
+            }
+
+            #fwd-letters .author-pic img {
+                border-bottom: 1px solid #83B17B80 !important;
+            }
+
+            #fwd-letters .byline p {
+                color: #83B17B;
+            }
+            
+        }
+
+		@media screen and (max-width: 840px) {
+
+			.headline-block {
+				flex-flow: column wrap;
+			}
+
+			.byline-container {
+				margin-top: 1em !important;
+				margin-bottom: 1em !important;
+			}
+
+            #fwd-letters {
+                /* background-color: #F3FAF2; */
+                box-shadow: #83B17B50 0px 0px 0px 1px, #83B17B 0px 1px 5px;
+                /* border: 2px #83b17b40 solid; */
+            }
+
+            #fwd-letters .author-pic img {
+                border-bottom: 1px solid #83B17B50 !important;
+            }
+
+            #fwd-letters:hover {
+                /* border: 2px #83B17B solid; */
+            }
+
+            #fwd-letters .byline p {
+                color: #6a9762;
+            }
+
+            #fwd-letters a {
+                color: #83B17B;
+            }
+
+            #fwd-letters a:hover {
+                opacity: 50%;
+            }
+ 
+		}
+
+        @media screen and (max-width: 840px) and (prefers-color-scheme: dark) {
+            #fwd-letters {
+                /* background-color: #F3FAF2; */
+                box-shadow: #83B17B80 0px 0px 0px 1px;
+                /* border: 2px #83b17b40 solid; */
+            }
+        }
+
+		.headline-block {
+			max-width: 100%;
+			flex-flow: row wrap;
+		}
+
+	</style>
+	
+</head>
+<body>
+	<div class="content">
+        <div class="logo">
+            <a class="logo-link" href="/">
+            <svg width="394" height="30vh" viewBox="0 0 394 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <style>
+                    @media (prefers-color-scheme: dark) {
+                    circle, rect {
+                        fill: white;
+                    }
+                        rect, line {
+                        stroke: white;
+                        }
+                    }
+                </style>
+                <circle cx="197.005" cy="253.667" r="38.1241" fill="black"/>
+                <rect x="0.480469" y="245.831" width="393.039" height="15.6721" rx="7.83604" fill="black"/>
+                <line x1="269.236" y1="172.369" x2="367.61" y2="65.0791" stroke="black" stroke-width="23.9522" stroke-linecap="round" stroke-dasharray="5.99 59.88"/>
+                <line x1="11.9761" y1="-11.9761" x2="157.539" y2="-11.9761" transform="matrix(-0.675817 -0.737069 -0.737069 0.675817 128.565 189.29)" stroke="black" stroke-width="23.9522" stroke-linecap="round" stroke-dasharray="5.99 59.88"/>
+                <line x1="198.509" y1="158.144" x2="198.508" y2="12.5809" stroke="black" stroke-width="23.9522" stroke-linecap="round" stroke-dasharray="5.99 59.88"/>
+            </svg>
+            </a>
+        </div>
+        <div class="middle-links">
+            <a href="/about.html">Манифест</a>
+            <a href="/us.html" style="margin-right: 0px !important">О нас</a>
+        </div>
+
+        <p class="text" id="new" style="display: inherit; margin-top: 0;">
+            <em>сверхновая</em>&nbsp;&mdash; это медиа о&nbsp;будущем, интернете и&nbsp;свободе. Мы&nbsp;ищем надежду на&nbsp;будущее в&nbsp;<a id="tg" style="position: relative;" href="https://t.me/supernovafuture">телеграм-канале</a> и&nbsp;в&nbsp;комьюнити-чате <a id="soyuz" style="padding-bottom: 0.1em;" href="https://t.me/supernovafuture/13">СОЮЗ</a>, цепляемся за&nbsp;призраки прошлого в&nbsp;<a style="" href="https://www.facebook.com/supernovafuture">фейсбуке</a> и&nbsp;ищем визуальные метафоры нового мира в&nbsp;<a style="" href="https://www.instagram.com/supernova_future/">инстаграме</a> и&nbsp;<a style="" href="https://www.are.na/sn">are.na</a>
+        </p>
+
+        <div class="headline-block">
+
+            <div class="byline-container" onclick="location.href='/editorial/face-recognition.html';">
+                <div class="author-pic">
+                    <img style="aspect-ratio: 16/10;" src="/img/face-recognition/1.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Узнать из&nbsp;тысячи тысяч: X&nbsp;арт-проектов про технологию распознавания лиц</p></address>
+                    <div class="byline-desc">Какими нас видят машины и&nbsp;можно&nbsp;ли спрятаться от&nbsp;умных камер</div>
+                    <div class="byline-link"> <a href="">Ольга Дерюгина</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/visions/data-futures.html';">
+                <div class="author-pic">
+                    <img style="aspect-ratio: 16/10;" src="/img/data-futures/1-2.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Дата-капсулы и&nbsp;профсоюзы данных: каким будет будущее онлайн-приватности?</p></address>
+                    <div class="byline-desc">Мы&nbsp;могли&nbsp;бы зарабатывать на&nbsp;собственном цифровом следе, но&nbsp;нужно&nbsp;ли нам это?</div>
+                    <div class="byline-link"> <a href="">Станислав Ронжин</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/too-smart.html';">
+                <div class="author-pic">
+                    <img style="aspect-ratio: 16/10;" src="/img/too-smart/1.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Слишком умные: IoT-устройства на&nbsp;все случаи жизни</p></address>
+                    <div class="byline-desc">Подборка неочевидных гаджетов для самых требовательных пользователей</div>
+                    <div class="byline-link"> <a href="">Вика Ильина</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/visions/break-up.html';">
+                <div class="author-pic">
+                    <img style="aspect-ratio: 16/10;" src="/img/break.up/1-2.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">&laquo;Умная машина начала забывать тебя раньше&raquo;: травелог о&nbsp;расставании</p></address>
+                    <div class="byline-desc">Публикуем фрагмент из&nbsp;романа &laquo;Разрыв&raquo; Джоанны Уолш, который выходит на&nbsp;русском в&nbsp;No&nbsp;Kidding Press</div>
+                    <div class="byline-link"> <a href="">Джоанна Уолш</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/ai-bias.html';">
+                <div class="author-pic">
+                    <img style="aspect-ratio: 16/10;" src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-2000w,f_auto,q_auto:best/newscms/2019_11/2781986/190311-flickr-ibm-main-kh.gif" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Почему ИИ&nbsp;копирует наши предубеждения и&nbsp;как это исправить</p></address>
+                    <div class="byline-desc">Полностью освободить себя от&nbsp;предрассудков мы&nbsp;вряд&nbsp;ли сумеем, а&nbsp;вот у&nbsp;ИИ больше шансов</div>
+                    <div class="byline-link"> <a href="">Денис Протопопов</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/metaphors.html';">
+                <div class="author-pic">
+                    <img style="aspect-ratio: 16/10;" src="https://d2w9rnfcy7mm78.cloudfront.net/3244045/original_921b3032ab2e66602d432603d79b0197.gif?1545400477?bc=1" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Серферы в&nbsp;глобальной паутине. Как интернет скрывается/проявляется за&nbsp;метафорами</p></address>
+                    <div class="byline-desc">Определим по&nbsp;метафоре ваш род занятий и&nbsp;возраст. Без регистрации и&nbsp;смс</div>
+                    <div class="byline-link"> <a href="">Аня Щетвина</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/dazed.html';">
+                <div class="author-pic">
+                    <img style="height: 30em;" src="/img/dazed/9.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Конец соцсетей, учитель как коуч и&nbsp;одежда из&nbsp;мусора: Х&nbsp;прогнозов из&nbsp;доклада Dazed о&nbsp;жизни в&nbsp;2030 году</p></address>
+                    <div class="byline-desc">Cчастливый оцифрованный мир будущего глазами двадцатилетних</div>
+                    <div class="byline-link"> <a href="">Татьяна Афанасьева</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/cobots.html';">
+                <div class="author-pic">
+                    <img style="height: 30em;" src="/img/cobots/2.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Механическая рука помощи: что роботы и&nbsp;коботы делают на&nbsp;заводах</p></address>
+                    <div class="byline-desc">Спойлер: даже если робот отнимет у&nbsp;вас работу, безработица продлится недолго</div>
+                    <div class="byline-link"> <a href="">Иван Неткачев</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/relaxation.html';">
+                <div class="author-pic">
+                    <img style="height: 30em;" src="https://media.giphy.com/media/8CPlbXZiuZ7AiLLNJZ/giphy.gif?cid=790b7611fa9d217a97173b04eb54f474e7a045e8c7af2f50&rid=giphy.gif&ct=g" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Включи смартфон и&nbsp;закрой глаза. Х&nbsp;технологий, которые помогут расслабиться</p></address>
+                    <div class="byline-desc">Приложения и&nbsp;гаджеты для тех, кто не&nbsp;может и&nbsp;минуты прожить без дела</div>
+                    <div class="byline-link"> <a href="">Татьяна Афанасьева</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/h.html';">
+                <div class="author-pic">
+                    <img src="/img/h/h.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Почему человечность&nbsp;&mdash; главный скилл 21&nbsp;века: кураторы Эйч о&nbsp;будущем работы</p></address>
+                    <div class="byline-desc">А&nbsp;также: как меняется представление о&nbsp;карьерном успехе и&nbsp;нужен&nbsp;ли сегодня профильный диплом</div>
+                    <div class="byline-link"> <a href="">Татьяна Афанасьева</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/bracelets.html';">
+                <div class="author-pic">
+                    <img src="/img/bracelets/cover-2.png"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Электронные кандалы: как работают браслеты для обвиняемых и&nbsp;осужденных</p></address>
+                    <div class="byline-desc">Гуманизация наказания или стигматизация? Разбираем историю и&nbsp;технические особенности высоких технологий надзора</div>
+                    <div class="byline-link"> <a href="">сверхновая</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/visions/sun-ha.html';">
+                <div class="author-pic">
+                    <img src="/img/sun-ha/1.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">&laquo;Технологический утопизм похож на&nbsp;американский ситком&raquo;: большое интервью с&nbsp;исследователем медиа Сан Ха&nbsp;Хонгом</p></address>
+                    <div class="byline-desc">Размышления об&nbsp;ограниченности технологического воображения и&nbsp;вере в&nbsp;инновации</div>
+                    <div class="byline-link"> <a href="https://www.facebook.com/safretak/">Дима Муравьёв</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" id="privacy" onclick="location.href='/privacy/surveillance-capitalism.html';">
+                <div class="author-pic">
+                    <img src="/img/surveillance-capitalism/1.jpg"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline" style="color: #0043FF;"> <p rel="author" href="/404.html">Как мы&nbsp;оказались в&nbsp;эпохе надзорного капитализма и&nbsp;каким будет будущее конфиденциальности</p></address>
+                    <div class="byline-desc">Разбираемся в&nbsp;вопросе защищенности личных данных в&nbsp;интернете</div>
+                    <div class="byline-link"> <a href="https://t.me/culture_worker">Степан Ботарев</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/robotic-animals.html';">
+                <div class="author-pic">
+                    <img src="/img/robotic-animals/octobot-2.jpg"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Гибкий как уж&nbsp;и&nbsp;устойчивый как таракан: 7&nbsp;роботов, имитирующих животных</p></address>
+                    <div class="byline-desc">Эти ребята с&nbsp;трудом поднимаются по&nbsp;лестнице и&nbsp;не&nbsp;умеют открывать двери, зато могут карабкаться по&nbsp;стенам и&nbsp;исследовать Марс</div>
+                    <div class="byline-link"> <a href="">сверхновая</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/overheating.html';">
+                <div class="author-pic">
+                    <img src="https://media.giphy.com/media/3oKGzgNfssFG1xlwC4/giphy.gif"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Комп в&nbsp;огне: как спасти свой девайс от&nbsp;перегрева в&nbsp;жару</p></address>
+                    <div class="byline-desc">Внутри чеклист, который поможет продлить жизнь вашей техники</div>
+                    <div class="byline-link"> <a href="">Александра Генералова</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/cookies.html';">
+                <div class="author-pic">
+                    <img src="/img/cookies/1.png"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Браузер, который все о&nbsp;нас знал: как работают cookies и&nbsp;кому они нужны</p></address>
+                    <div class="byline-desc">Всего от&nbsp;нескольких строчек кода зависит будущее рекламы в&nbsp;интернете и&nbsp;конфиденциальность личных данных</div>
+                    <div class="byline-link"> <a href="">Евгений Лисовский</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/biopass.html';">
+                <div class="author-pic">
+                    <img src="/img/biopass/cyberpass1-2.jpg"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Нас все-таки чипируют. Что нужно знать про российские электронные паспорта</p></address>
+                    <div class="byline-desc">Скоро в&nbsp;РФ вместо бумажных паспортов будут выдавать пластиковый ID&nbsp;с чипом. Изучаем плюсы и&nbsp;минусы нового документа</div>
+                    <div class="byline-link"> <a href="">Лиза Доррер</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/robots-vs-sadness.html';">
+                <div class="author-pic">
+                    <img src="/img/robots-vs-sadness/1.jpg"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Компаньон для грустных дней: может&nbsp;ли робот выслушать и&nbsp;утешить?</p></address>
+                    <div class="byline-desc">Мы к такому не привыкли, но умные технологии уже знают о нашей психологии больше, чем мы думаем</div>
+                    <div class="byline-link"> <a href="">Альбина Заверткина</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/piracy.html';">
+                <div class="author-pic">
+                    <img src="/img/piracy/sn-skull-2.gif"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Пиратство: воровство или борьба за&nbsp;свободу информации?</p></address>
+                    <div class="byline-desc">Что думают об&nbsp;этой дилемме философы, писатели, музыканты и&nbsp;сами пираты</div>
+                    <div class="byline-link"> <a href="https://t.me/culture_worker">Степан Ботарев</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/bot-or-not.html';">
+                <div class="author-pic">
+                    <img src="/img/bot-or-not/обложка_.png"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Как понять, что с&nbsp;тобой общается бот</p></address>
+                    <div class="byline-desc">Уверены, что никогда не&nbsp;попадетесь на&nbsp;удочку цифровых мошенников? Все равно прочитайте нашу памятку</div>
+                    <div class="byline-link"> <a href="https://t.me/lgorodnicheva">Людмила Городничева</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/housework.html';">
+                <div class="author-pic">
+                    <img src="/img/housework/1.png"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Мой дом&nbsp;&mdash; моя работа. Почему за&nbsp;домашний труд нужно платить</p></address>
+                    <div class="byline-desc">Если коротко, то&nbsp;потому что именно благодаря ему держится экономика</div>
+                    <div class="byline-link"> <a href="https://femtalks.moscow">Лана Узарашвили</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/visions/instagram.html';">
+                <div class="author-pic">
+                    <img src="/img/instagram/89.jpg"  alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">&laquo;Хаки роста&raquo; и&nbsp;другие правила жизни в&nbsp;Instagram</p></address>
+                    <div class="byline-desc">Делимся с&nbsp;вами фрагментом из&nbsp;книги &laquo;No&nbsp;Filter. История Instagram&raquo;, вышедшей весной 2021 года в&nbsp;издательстве &laquo;Бомбора&raquo;</div>
+                    <div class="byline-link"> <a href="https://bombora.ru/book/71296/">Сара Фрайер</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/anonymity.html';">
+                <div class="author-pic">
+                    <img src="/img/anonymity/sn-knife-sat-px-3.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Обойдемся без имен: кому и&nbsp;когда выгодна анонимность в&nbsp;современном мире</p></address>
+                    <div class="byline-desc">Главные тезисы&nbsp;из (почти) анонимного сборника, вышедшего в&nbsp;издательстве punctum books</div>
+                    <div class="byline-link"> <a href="https://t.me/anthropocene_affairs">Ольга Дерюгина</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" id="fwd-letters" onclick="location.href='/fwd-letters.html';">
+                <div class="author-pic">
+                    <img src="/img/letters-about-the-future/13.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">FWD: Письма о&nbsp;будущем. Спецпроект <i>сверхновой</i></p></address>
+                    <div class="byline-desc">Это переписка из&nbsp;8&nbsp;писем о&nbsp;том, как и&nbsp;где производится личное и&nbsp;коллективное завтра</div>
+                    <div class="byline-link"> <a>Полина Колозариди и Андрей Тесля</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/trendwatching.html';">
+                <div class="author-pic">
+                    <img src="/img/trendwatching/1.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Трендвотчинг, форсайт, футуризм и&nbsp;еще три способа думать о&nbsp;будущем</p></address>
+                    <div class="byline-desc">Разбираемся, что стоит за&nbsp;этими терминами и&nbsp;как правильно их&nbsp;применять</div>
+                    <div class="byline-link"> <a href="https://www.youtube.com/c/vetushinskiy">Дарья Яковлева</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/visions/trenirovannyj-vzglyad.html';">
+                <div class="author-pic">
+                    <img src="https://media.giphy.com/media/5b26lAAz0z6c972edk/source.gif" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Тренированный взгляд: как видеоигры учат нас смотреть правильно</p></address>
+                    <div class="byline-desc">Публикуем фрагмент из&nbsp;книги &laquo;Игродром: что нужно знать о&nbsp;видеоиграх и&nbsp;игровой культуре&raquo;</div>
+                    <div class="byline-link"> <a href="https://www.youtube.com/c/vetushinskiy">Александр Ветушинский</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/beskontaktnyj-gorod.html';">
+                <div class="author-pic">
+                    <img src="img/beskontaktnyj-gorod/sda2.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Бесконтактный город: рай для интровертов или ад&nbsp;для параноиков?</p></address>
+                    <div class="byline-desc">Об&nbsp;особенностях жизни под наблюдением умных систем и&nbsp;технологиях, угадывающих &laquo;желания&raquo; пользователя</div>
+                    <div class="byline-link"> <a href="https://medium.com/yulyas-blog">Юлия Бесплеменнова</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/blizkie-kontakty-bez-kasanij.html';">
+                <div class="author-pic">
+                    <img src="/img/blizkie-kontakty-bez-kasanij/touch.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Близкие контакты без касаний: Х&nbsp;постпандемийных технологий</p></address>
+                    <div class="byline-desc">Забудьте о&nbsp;тачскринах. Скоро мы&nbsp;будем открывать двери взглядом, жестом и&nbsp;волшебным словом</div>
+                    <div class="byline-link"> <a href="https://t.me/anthropocene_affairs">Ольга Дерюгина</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/iskusstvennyj-intellekt-v-zhurnalistike.html';">
+                <div class="author-pic">
+                    <img src="/img/iskusstvennyj-intellekt-v-zhurnalistike/989.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Искусственный интеллект в&nbsp;журналистике: помощник или конкурент?</p></address>
+                    <div class="byline-desc">Зачем уважаемые новостные издания &laquo;нанимают&raquo; на&nbsp;работу машин, и&nbsp;потеснят&nbsp;ли умные технологии людей</div>
+                    <div class="byline-link"> <a href="https://t.me/culture_worker">Степан Ботарев</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='editorial/razum-lyagushki-i-elektronnoe-serdce.html';">
+                <div class="author-pic">
+                    <img src="/img/razum-lyagushki-i-elektronnoe-serdce/khamkin-1.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Разум лягушки и&nbsp;электронное сердце: почему будущее&nbsp;&mdash; за&nbsp;биокомпьютерами</p></address>
+                    <div class="byline-desc">Уже к&nbsp;2026-му году ваш компьютер может оказаться живым. Разбираемся, зачем нужны гибридные машины и&nbsp;чем они принципиально отличаются от&nbsp;обычных</div>
+                    <div class="byline-link"> <a href="https://t.me/anthropocene_affairs">Ольга Дерюгина</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='editorial/konec-sveta-otmenyaetsya.html';">
+                <div class="author-pic">
+                    <img src="/img/konec-sveta-otmenyaetsya/konec-3.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Конец света отменяется? Что происходит в&nbsp;Институте будущего жизни</p></address>
+                    <div class="byline-desc">Что происходит в&nbsp;институте, где предсказывают глобальные катастрофы и&nbsp;придумывают, как их&nbsp;предотвращать?</div>
+                    <div class="byline-link"> <a href="https://t.me/aidumpsterfire">Леонид Ганжа</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='visions/solarpunk.html';">
+                <div class="author-pic">
+                    <img src="/img/solarpunk/solarpunk-1.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Навстречу светлому будущему. Соларпанк против экотревожности</p></address>
+                    <div class="byline-desc">Как новый литературный жанр делает утопию вновь желанной и&nbsp;приближенной к&nbsp;реальности, и&nbsp;причем тут солнечная энергетика</div>
+                    <div class="byline-link"> <a href="https://t.me/tastethewaste">Taste the Waste</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='visions/saharov.html';">
+                <div class="author-pic">
+                    <img src="/img/saharov/saharov.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Андрей Сахаров. Мир через полвека</p></address>
+                    <div class="byline-desc">К столетию академика сверхновая публикует перевод статьи ученого, написанной весной 1974 года по просьбе американского журнала Saturday Review</div>
+                    <div class="byline-link"> <a href="https://t.me/anthropocene_affairs">Андрей Сахаров</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='editorial/turizm-posle-pandemii-budet-luchshe.html';">
+                <div class="author-pic">
+                    <img src="/img/turizm-posle-pandemii-budet-luchshe/1.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Туризм после пандемии будет лучше: Х&nbsp;прогнозов сверхновой</p></address>
+                    <div class="byline-desc">Рассказываем о том, как в&nbsp;ближайшем будущем изменится туризм и&nbsp;какие трансформации уже происходят в&nbsp;индустрии из-за коронавируса</div>
+                    <div class="byline-link"> <a href="https://t.me/anthropocene_affairs">Ольга Дерюгина</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/sotnya-uchenyh-i-mogila-kotoruyu-nelzya-naveshchat.html';">
+                <div class="author-pic">
+                    <img src="/img/sotnya-uchenyh-i-mogila-kotoruyu-nelzya-naveshchat/atomic-umnova-2.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Сотня ученых и&nbsp;могила, которую нельзя навещать</p></address>
+                    <div class="byline-desc">Сейчас радиоактивные отходы хранятся глубоко под землей. Они будут представлять опасность для всего живого на&nbsp;протяжении десятков тысяч лет. Как предупредить об&nbsp;этом потомков?</div>
+                    <div class="byline-link"> <a href="https://t.me/anthropocene_affairs">Ольга Дерюгина</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/kak-vidyat-i-vosprinimayut-mir-mashiny.html';">
+                <div class="author-pic">
+                    <img src="/img/kak-vidyat-i-vosprinimayut-mir-mashiny/3.png" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Как видят и воспринимают мир машины</p></address>
+                    <div class="byline-desc">Можете&nbsp;ли вы&nbsp;отличить кота от&nbsp;собаки? А&nbsp;человека от&nbsp;чашки кофе? Вероятно, для вас это не&nbsp;составит проблемы, а&nbsp;вот машине придется поднапрячься</div>
+                    <div class="byline-link"> <a href="https://www.facebook.com/theonewholovespugs">Лена Николаева</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/stoletnyaya-lampochka-vs-medlennye-ajfony.html';">
+                <div class="author-pic">
+                    <img src="/img/stoletnyaya-lampochka-vs-medlennye-ajfony/lampochka-cover.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Столетняя лампочка&nbsp;VS медленные айфоны: как выбрать технику, которая не&nbsp;умрет через полгода</p></address>
+                    <div class="byline-desc">Почему в&nbsp;калифорнийском городе лампочка горит уже сто лет, а&nbsp;новый смартфон выходит из&nbsp;строя через пару лет? Разбираемся, что такое планируемое устаревание</div>
+                    <div class="byline-link"> <a href="https://t.me/culture_worker">Степан Ботарев</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/review-yuk-hui.html';">
+                <div class="author-pic">
+                    <img src="/img/review-yuk-hui/huei-cover.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Одомашненная метастабильность. &laquo;Рекурсивность и&nbsp;контингентность&raquo; Юка Хуэя</p></address>
+                    <div class="byline-desc">Новая книга гонконгского философа Юка Хуэя рассказывает о&nbsp;двух ключевых способностях технических и&nbsp;органических систем нашего времени: рекурсивности и&nbsp;контингентности</div>
+                    <div class="byline-link"> <a href="https://t.me/affaff4ea">Максим Мирошниченко</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/mify-o-privatnosti-v-internete.html';">
+                <div class="author-pic">
+                    <img src="/img/mify-o-privatnosti-v-internete/cover.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Как будете защищаться? Мифы о&nbsp;приватности в&nbsp;интернете</p></address>
+                    <div class="byline-desc"> Зачем нужен режим приватности в&nbsp;браузере, опасно&nbsp;ли пользоваться публичным Wi-Fi и&nbsp;другие вопросы о&nbsp;безопасности данных в&nbsp;интернете</div>
+                    <div class="byline-link"> <a href="">Полина Батраева</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/editorial/books-march-2021.html';">
+                <div class="author-pic">
+                    <img src="/img/books-march-2021/books-cover.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Аутсайдеры, сверхумные машины и&nbsp;&laquo;какая-то чертовщина&raquo;: что читает редакция &laquo;сверхновой&raquo;</p></address>
+                    <div class="byline-desc">В&nbsp;этой подборке команда сверхновой делится книгами, которые отражают наши ценности, сталкивают с&nbsp;личными страхами и&nbsp;описывают множество разных будущих</div>
+                    <div class="byline-link"> <a href="/us.html">сверхновая</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/visions/davaj-zavtra.html';">
+                <div class="author-pic">
+                    <img src="/img/davaj-zavtra/suits.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Давай завтра? Как придумывать своё будущее и&nbsp;не&nbsp;застревать в&nbsp;утопии</p></address>
+                    <div class="byline-desc">Будущее начинается с&nbsp;чашки, которую вы&nbsp;ставите в&nbsp;раковину, рассчитывая помыть её&nbsp;утром</div>
+                    <div class="byline-link"> <a href="https://www.facebook.com/upperham">Дима Безуглов</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/visions/ocharuj-menya-algoritm.html';">
+                <div class="author-pic">
+                    <img src="/img/ocharuj-menya-algoritm/computer.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Очаруй меня, алгоритм: как соорудить будущее с&nbsp;технологией своими руками</p></address>
+                    <div class="byline-desc">Алгоритмические обещания не&nbsp;знают предметных границ&nbsp;&mdash; в&nbsp;своих поисках будущего алгоритмы пересекают границы государств, организаций и&nbsp;личных жизней</div>
+                    <div class="byline-link"> <a href="https://www.facebook.com/safretak/">Дима Муравьёв</a></div>
+                </div>
+            </div>
+
+            <div class="byline-container" onclick="location.href='/visions/kak-najti-novoe-budushchee.html';">
+                <div class="author-pic">
+                    <img src="/img/kak-najti-novoe-budushchee/eclipse.jpg" alt="">
+                </div>
+                <div class="author-text">
+                    <address class="byline"><p rel="author" href="/404.html">Как найти новое будущее? Гороскоп на 2021 год</p></address>
+                    <div class="byline-desc">Почему в&nbsp;этом году я&nbsp;так цепляюсь за&nbsp;ритуалы и&nbsp;магические практики? Потому что они дают мне ответы, которые внешний мир давать перестал</div>
+                    <div class="byline-link"> <a href="https://twitter.com/dimavesnin">Дима Веснин</a></div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="links">
+            <a href="https://www.facebook.com/supernovafuture/" target="_blank" id="fb">Facebook</a>
+            <a href="https://www.instagram.com/supernova_future/" target="_blank">Instagram</a>
+            <a href="https://www.vk.com/supernovafuture/" target="_blank">VK</a>
+            <a href="https://www.twitter.com/supernovafuture/" target="_blank">Twitter</a>
+            <a href="https://www.t.me/supernovafuture/" target="_blank">Telegram</a>
+            <a href="https://supernovamedia.substack.com/p/coming-soon" target="_blank" style="margin-right: 0px !important" id="twitter">Рассылка</a>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="footer-text" id="rating">18 +</div>
+            <div class="footer-text" id="sn-footer">
+                <a href="/about.html">сверхновая</a>
+            </div>
+            <div class="footer-text" id="plausable">
+                <a href="https://plausible.io/supernova.is" target="_blank">Мы&nbsp;используем ответственную аналитику от&nbsp;Plausible</a>
+            </div>
+            <div class="footer-text">
+                <a href="mailto:superfuturenova@gmail.com">Связаться с нами</a>
+            </div>
+        </div>
+    </div>
+
+	<!-- JS onlick method courtesy of Chris Kraack -->
+	<!-- JS link method courtesy of Sergey Surganov and Pranav C Balan -->
+    <script type="text/javascript">
+        Array.prototype.forEach.call(document.querySelectorAll('.text a, .byline-link a'), function (link) { link.target = "_blank" });
+
+        console.log("Не читайте этот код, сохраните себе нервы (╯°□°）╯︵ ┻━┻");
+
+    </script>
+</body>
+</html>
